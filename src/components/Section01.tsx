@@ -21,7 +21,7 @@ const Section01 = () => {
       </p>
       <a
         className="primary-button"
-        href="https://stabletrust.fairblock.network/"
+        href="https://app.stabletrust.fairblock.network/"
         rel="noopener noreferrer"
         target="_blank"
       >

@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <a
             className="hidden sm:block primary-button"
-            href="https://stabletrust.fairblock.network/"
+            href="https://app.stabletrust.fairblock.network/"
             rel="noopener noreferrer"
             target="_blank"
           >
