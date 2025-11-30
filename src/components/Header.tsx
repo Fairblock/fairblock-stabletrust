@@ -27,13 +27,13 @@ const Header = () => {
             >
               How it works
             </a>
-            <a
+            {/* <a
               href="https://stabletrust.fairblock.network/how-it-works.html"
               rel="noopener noreferrer"
               target="_blank"
             >
               FAQ
-            </a>
+            </a> */}
           </div>
           <a
             className="hidden sm:block primary-button"
