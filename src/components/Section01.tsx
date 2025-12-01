@@ -6,7 +6,7 @@ const words = ["Payments", "Trading", "Commerce", "Payroll", "Strategic Deals"];
 
 const Section01 = () => {
   return (
-    <div className="wrapper min-h-80 mt-20 w-full!">
+    <div className="wrapper min-h-screen w-full!">
       <BackgroundVideo />
       <h2 className="font-bold font-charter text-2xl sm:text-4xl">
         Incorruptible Money Movement for{" "}
@@ -14,10 +14,9 @@ const Section01 = () => {
           <TypingTextAnimation texts={words} />
         </span>
       </h2>
-      <p className="font-light font-sf-pro-display sm:text-lg max-w-[400px]">
-        Confidential stablecoins that keep amounts and balances private for
-        users, businesses, and institutions. You decide who can see what and
-        when.
+      <p className="font-light font-sf-pro-display text-lg sm:text-xl">
+        Confidential stablecoins that keep amounts and balances private. <br />
+        You decide who can see what and when.
       </p>
       <a
         className="primary-button"

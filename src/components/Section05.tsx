@@ -42,7 +42,7 @@ const Card = ({ imgUrl, title, content }: CardProps) => {
       <img className="border-b-2 border-primary-blue min-h-56 object-cover rounded-t-xl" src={imgUrl} alt={title} />
       <div className="p-6">
         <h5 className="font-charter font-bold mb-2 text-xl sm:text-2xl">{title}</h5>
-        <p className="font-sf-pro-display sm:text-lg">{content}</p>
+        <p className="font-sf-pro-display text-lg sm:text-xl">{content}</p>
       </div>
     </div>
   );

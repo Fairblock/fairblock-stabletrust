@@ -68,7 +68,7 @@ export default function ScrollStepSection({ steps }: Props) {
                     <h3 className="font-charter font-bold mb-4 text-xl sm:text-2xl">
                       {step.title}
                     </h3>
-                    <p className="font-sf-pro-display sm:text-lg">
+                    <p className="font-sf-pro-display text-lg sm:text-xl">
                       {step.description}
                     </p>
                   </div>

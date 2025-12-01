@@ -1,12 +1,12 @@
 const Section02 = () => {
   return (
-    <div className="wrapper pt-20 mb-20 bg-white">
+    <div className="wrapper min-h-screen mb-20 bg-white">
       <div className="flex flex-col md:flex-row gap-4 justify-between">
         <div>
           <h3 className="font-bold font-charter mb-8 text-2xl sm:text-4xl">
             Stop the Leak
           </h3>
-          <div className="font-sf-pro-display font-light flex flex-col gap-4 sm:text-lg max-w-[640px]">
+          <div className="font-sf-pro-display font-light flex flex-col gap-4 text-lg sm:text-xl max-w-[640px]">
             <p>
               Moving money onchain means leaking sensitive financial
               information. Anyone can see how much you paid, who you paid, when
@@ -36,7 +36,7 @@ const Section02 = () => {
           <source src="/s02-animation.mp4" type="video/mp4" />
         </video>
       </div>
-      <p className="sm:hidden font-sf-pro-display font-bold italic sm:text-lg text-center">
+      <p className="sm:hidden font-sf-pro-display font-bold italic sm:text-xl text-center">
         Confidentiality [kon-fi-den-shi-al-i-tee]:
         <br />
         Incorruptible money movement

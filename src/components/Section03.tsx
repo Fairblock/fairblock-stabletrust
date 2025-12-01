@@ -51,7 +51,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
         <h5 className="font-charter font-bold mb-2 text-xl sm:text-2xl">
           {title}
         </h5>
-        <p className="font-sf-pro-display sm:text-lg">{content}</p>
+        <p className="font-sf-pro-display text-lg sm:text-xl">{content}</p>
       </div>
     </div>
   );

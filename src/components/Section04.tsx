@@ -53,7 +53,7 @@ const Section04 = () => {
                   <h3 className="font-charter font-bold mb-2 text-lg">
                     {step.title}
                   </h3>
-                  <p className="font-sf-pro-display text-sm">
+                  <p className="font-sf-pro-display sm:text-lg">
                     {step.description}
                   </p>
                 </div>
