@@ -23,7 +23,7 @@ const CARD_DETAILS = [
   {
     id: "03",
     imgUrl: "/s05-card-3.svg",
-    title: "Verifiable on Demand",
+    title: "Selective Disclosure on Demand",
     content:
       "When required, disclose a specific transaction to finance, auditors, regulators, or banks without exposing your entire history. It’s what institutions need for reporting. ",
   },

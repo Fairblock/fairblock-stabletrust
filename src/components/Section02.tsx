@@ -16,19 +16,31 @@ const Section02 = () => {
             </p>
             <p>That’s not how real business operates.</p>
             <p>
-              Stabletrust finally makes privacy painless and usable on blockchains through confidentiality.
+              Stabletrust finally makes privacy painless and usable on
+              blockchains through confidentiality.
             </p>
             <p className="hidden sm:block font-sf-pro-display font-bold italic sm:text-lg">
-              Confidentiality [kon-fi-den-shi-al-i-tee]: Incorruptible money movement with built-in compliance.
+              Confidentiality [kon-fi-den-shi-al-i-tee]:
+              <br />
+              Incorruptible money movement with built-in compliance.
             </p>
           </div>
         </div>
-        <video className="md:max-w-1/2 xl:max-w-2/5" autoPlay loop muted playsInline>
+        <video
+          className="md:max-w-1/2 xl:max-w-2/5"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src="/s02-animation.mp4" type="video/mp4" />
         </video>
       </div>
-      <p className="sm:hidden font-sf-pro-display font-bold italic sm:text-lg">
-        Private by default. Verifiable on demand.
+      <p className="sm:hidden font-sf-pro-display font-bold italic sm:text-lg text-center">
+        Confidentiality [kon-fi-den-shi-al-i-tee]:
+        <br />
+        Incorruptible money movement
+        <br /> with built-in compliance.
       </p>
     </div>
   );

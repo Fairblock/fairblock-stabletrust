@@ -21,7 +21,7 @@ const Header = () => {
         <div className="hidden sm:flex gap-12 items-center">
           <div className="flex gap-4">
             <a
-              href="https://stabletrust.fairblock.network/how-it-works.html"
+              href="https://app.stabletrust.fairblock.network/how-it-works.html"
               rel="noopener noreferrer"
               target="_blank"
             >
