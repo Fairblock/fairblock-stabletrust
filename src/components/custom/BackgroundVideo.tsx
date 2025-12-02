@@ -4,7 +4,7 @@ const BackgroundVideo = () => {
       <video
         className="
           absolute
-          -rotate-130
+          -rotate-140
           w-[500px]
           sm:w-[1000px]
 
@@ -12,7 +12,7 @@ const BackgroundVideo = () => {
           left-1/2 top-2/5 -translate-x-1/2 -translate-y-full
 
           /* desktop position */
-          sm:translate-x-0
+          sm:translate-x-52
           sm:translate-y-0
           sm:left-auto
           sm:right-0
@@ -23,7 +23,7 @@ const BackgroundVideo = () => {
         muted
         playsInline
       >
-        <source src="/s01-hero-animation.mp4" type="video/mp4" />
+        <source src="/s01-hero-animation-new.mp4" type="video/mp4" />
       </video>
     </div>
   );

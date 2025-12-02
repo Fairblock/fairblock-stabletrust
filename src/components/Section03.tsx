@@ -25,7 +25,7 @@ const CARD_DETAILS = [
     imgUrl: "/s03-business-and-institutions.svg",
     title: "Businesses and Institutions",
     content:
-      "Keep payroll and commercial terms confidential. Protect your competitive edge and regulatory standing.",
+      "Keep payroll and commercial terms confidential. Protect your competitive and regulatory standing.",
   },
 ];
 
@@ -36,7 +36,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
         id !== "03" ? "sm:border-r border-primary-blue pr-4" : ""
       } flex-1`}
     >
-      <div className="lg:px-4">
+      <div className="lg:px-2">
         <span className="hidden sm:block font-sf-pro-display text-primary-blue">
           {id}
         </span>

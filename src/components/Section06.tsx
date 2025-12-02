@@ -9,6 +9,8 @@ const PLATFORMS_AND_INVESTORS: string[] = [
   "s06-gsr.png",
   "s06-chorus-one.png",
   "s06-reverie.png",
+  "s06-atom.png",
+  "s06-dora-hacks.png",
   "Zaki Manian",
   "Waikit Lau",
   "Leland Lee",
@@ -36,9 +38,15 @@ const Section06 = () => {
               className="flex items-center justify-center p-4 rounded-lg"
             >
               {item.startsWith("s06") ? (
-                <img className="invert max-h-6 lg:max-h-12 max-w-24 lg:max-w-36" src={item} alt={item} />
+                <img
+                  className="max-h-6 lg:max-h-12 max-w-24 lg:max-w-36"
+                  src={item}
+                  alt={item}
+                />
               ) : (
-                <p className="font-sf-pro-display lg:text-2xl text-center">{item}</p>
+                <p className="font-sf-pro-display lg:text-2xl text-center">
+                  {item}
+                </p>
               )}
             </div>
           );

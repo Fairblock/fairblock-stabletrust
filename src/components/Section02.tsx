@@ -9,7 +9,7 @@ const Section02 = () => {
           <div className="font-sf-pro-display font-light flex flex-col gap-4 text-lg sm:text-xl max-w-[640px]">
             <p>
               Moving money onchain means leaking sensitive financial
-              information. Anyone can see how much you paid, who you paid, when
+              information. <br /> Anyone can see how much you paid, who you paid, when
               you paid, and how much you still hold. That exposes payments,
               salaries, vendor terms, treasury moves, and strategies in real
               time.
@@ -27,13 +27,13 @@ const Section02 = () => {
           </div>
         </div>
         <video
-          className="md:max-w-1/2 xl:max-w-2/5"
+          className="md:max-w-1/4"
           autoPlay
           loop
           muted
           playsInline
         >
-          <source src="/s02-animation.mp4" type="video/mp4" />
+          <source src="/s02-animation-new.mp4" type="video/mp4" />
         </video>
       </div>
       <p className="sm:hidden font-sf-pro-display font-bold italic sm:text-xl text-center">
