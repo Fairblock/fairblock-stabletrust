@@ -70,7 +70,7 @@ const Section04 = () => {
           })}
           <a
             className="primary-button sm:hidden mt-8"
-            href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+            href="https://docs.fairblock.network/docs/confidential_transfers/confidential_transactions"
             rel="noopener noreferrer"
             target="_blank"
           >
