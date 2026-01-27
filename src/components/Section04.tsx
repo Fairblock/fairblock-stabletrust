@@ -29,8 +29,14 @@ const STEPS = [
   {
     title: "Strategic Deals",
     description:
-      "Make acquisitions or buy back tokens privately. No free early signal on block explorers.",
+      "Make acquisitions or buy back tokens privately. No free early signal on block explorers.",
     image: "/s04-strategic-deals.svg",
+  },
+  {
+    title: "RWA",
+    description:
+      "Trade tokenized securities confidentially while keeping portfolio composition private.",
+    image: "/s04-rwa.svg",
   },
 ];
 
