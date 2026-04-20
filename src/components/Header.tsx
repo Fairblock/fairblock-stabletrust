@@ -27,6 +27,13 @@ const Header = () => {
             >
               How it works
             </a>
+            <a
+              href="https://transparency-dashboard.fairblock.network/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Transparency Dashboard
+            </a>
             {/* <a
               href="https://stabletrust.fairblock.network/how-it-works.html"
               rel="noopener noreferrer"
@@ -73,6 +80,14 @@ const Header = () => {
           target="_blank"
         >
           How it works
+        </a>
+        <a
+          className="py-2"
+          href="https://transparency-dashboard.fairblock.network/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Transparency Dashboard
         </a>
         {/* <a
           className="py-2"
