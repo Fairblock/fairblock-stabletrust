@@ -21,18 +21,18 @@ const Header = () => {
         <div className="hidden sm:flex gap-12 items-center">
           <div className="flex gap-4">
             <a
-              href="https://app.stabletrust.io/how-it-works.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              How it works
-            </a>
-            <a
               href="https://transparency-dashboard.fairblock.network/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Transparency Dashboard
+            </a>
+            <a
+              href="https://app.stabletrust.io/how-it-works.html"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              How it works
             </a>
             {/* <a
               href="https://stabletrust.fairblock.network/how-it-works.html"
@@ -75,19 +75,19 @@ const Header = () => {
       >
         <a
           className="py-2"
-          href="https://app.stabletrust.io/how-it-works.html"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          How it works
-        </a>
-        <a
-          className="py-2"
           href="https://transparency-dashboard.fairblock.network/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Transparency Dashboard
+        </a>
+        <a
+          className="py-2"
+          href="https://app.stabletrust.io/how-it-works.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          How it works
         </a>
         {/* <a
           className="py-2"
