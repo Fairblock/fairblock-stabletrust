@@ -50,7 +50,7 @@ const Card = ({ imgUrl, title, content }: CardProps) => {
 
 const Section05 = () => {
   return (
-    <div className="wrapper bg-linear-to-b from-primary-blue via-primary-blue to-white py-12">
+    <div className="wrapper bg-linear-to-b from-primary-blue via-primary-blue to-white py-20 sm:py-28">
       <h3 className="font-bold font-charter text-2xl sm:text-4xl">
         Why Stabletrust
       </h3>

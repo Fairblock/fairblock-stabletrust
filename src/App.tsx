@@ -3,6 +3,7 @@ import "./App.css";
 // components
 import Header from "./components/Header";
 import Section01 from "./components/Section01";
+import UniversalFrontend from "./components/UniversalFrontend";
 import Section02 from "./components/Section02";
 import Section03 from "./components/Section03";
 import Section04 from "./components/Section04";
@@ -15,6 +16,7 @@ function App() {
     <div className="xl:relative mx-auto max-w-screen-2xl w-full!">
       <Header />
       <Section01 />
+      <UniversalFrontend />
       <Section02 />
       <Section03 />
       <Section04 />

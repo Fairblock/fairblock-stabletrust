@@ -59,7 +59,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
 
 const Section03 = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper py-20 sm:py-28">
       <h3 className="font-bold font-charter text-2xl sm:text-4xl">
         Protect What Matters
       </h3>

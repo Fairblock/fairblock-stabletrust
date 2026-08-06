@@ -25,7 +25,7 @@ const PLATFORMS_AND_INVESTORS: string[] = [
 
 const Section06 = () => {
   return (
-    <div className="wrapper mb-20 sm:my-20">
+    <div className="wrapper py-20 sm:py-28">
       <h3 className="font-bold font-charter text-2xl sm:text-4xl mx-auto">
         Trusted by the Best
       </h3>

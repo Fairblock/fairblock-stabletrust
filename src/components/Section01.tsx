@@ -6,10 +6,10 @@ const words = ["Payments", "Trading", "Commerce", "Payroll", "Strategic Deals"];
 
 const Section01 = () => {
   return (
-    <div className="wrapper min-h-screen w-full!">
+    <div className="wrapper w-full! py-20 sm:py-28">
       <BackgroundVideo />
       <h2 className="font-bold font-charter text-2xl sm:text-4xl">
-        Incorruptible Money Movement for{" "}
+        Confidential Stablecoins for{" "}
         <span className="italic">
           <TypingTextAnimation texts={words} />
         </span>

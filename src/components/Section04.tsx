@@ -42,9 +42,9 @@ const STEPS = [
 
 const Section04 = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper py-20 sm:py-28">
       {/* MOBILE SCREEN */}
-      <div className="lg:hidden my-20">
+      <div className="lg:hidden">
         <h3 className="font-charter font-bold mb-8 text-2xl sm:text-4xl">
           Built for Real Business
         </h3>

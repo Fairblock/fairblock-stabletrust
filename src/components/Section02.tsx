@@ -1,6 +1,6 @@
 const Section02 = () => {
   return (
-    <div className="wrapper min-h-screen mb-20 bg-white">
+    <div className="wrapper py-20 sm:py-28 bg-white">
       <div className="flex flex-col md:flex-row gap-4 justify-between">
         <div>
           <h3 className="font-bold font-charter mb-8 text-2xl sm:text-4xl">
