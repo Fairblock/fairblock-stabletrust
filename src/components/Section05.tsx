@@ -59,7 +59,7 @@ const Section05 = () => {
         <p className="section-label mb-5">Product principles</p>
         <h2 className="section-title">Why Stabletrust</h2>
         <p className="section-copy mt-6">
-          Confidentiality designed for production environments—not isolated
+          Confidentiality designed for production environments, not isolated
           experiments.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">

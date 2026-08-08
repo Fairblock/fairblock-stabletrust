@@ -32,7 +32,7 @@ export default function ScrollStepSection({ steps }: Props) {
           key={JSON.stringify(steps)}
           className="grid grid-cols-1 md:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr] gap-6 w-full"
         >
-          {/* LEFT SIDE — HEADER & BUTTON */}
+          {/* LEFT SIDE: HEADER AND BUTTON */}
           <div className="flex flex-col gap-16 md:my-36 xl:pl-24">
             <h3 className="font-bold font-charter text-2xl sm:text-4xl">
               Built for <br className="hidden sm:block" /> Real Business
@@ -47,7 +47,7 @@ export default function ScrollStepSection({ steps }: Props) {
             </a>
           </div>
 
-          {/* RIGHT SIDE — CARD AREA (YOUR RED BOX) */}
+          {/* RIGHT SIDE: CARD AREA (YOUR RED BOX) */}
           <div className="relative h-32 md:h-full w-full rounded-xl overflow-hidden">
             {steps.map((step, i) => (
               <motion.div

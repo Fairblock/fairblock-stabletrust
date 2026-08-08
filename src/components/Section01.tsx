@@ -19,7 +19,7 @@ const Section01 = () => {
           </h1>
           <p className="section-copy mt-7 max-w-[610px]">
             Move stablecoins without exposing amounts, balances, or business
-            relationships. You decide who can see what—and when.
+            relationships. You decide who can see what, and when.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

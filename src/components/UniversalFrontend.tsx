@@ -11,7 +11,7 @@ const UniversalFrontend = () => {
           </h2>
           <p className="section-copy mt-6">
             Stabletrust Pay gives users one consistent interface for
-            confidential stablecoins across blockchain ecosystems—without
+            confidential stablecoins across blockchain ecosystems, without
             forcing them into isolated privacy networks.
           </p>
           <div className="mt-8 flex flex-wrap gap-2">
