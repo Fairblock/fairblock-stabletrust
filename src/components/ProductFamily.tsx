@@ -59,6 +59,16 @@ const PRODUCTS: Product[] = [
     linkLabel: "Visit CUSD",
     featured: false,
   },
+  {
+    id: "06",
+    name: "Compliance Dashboard",
+    label: "For compliance teams",
+    description:
+      "Review confidential activity and manage selective disclosure through a controlled workspace built for authorized compliance, audit, and regulatory workflows.",
+    href: "https://docs.fairblock.network/ct/how-it-works/compliance",
+    linkLabel: "Explore compliance architecture",
+    featured: false,
+  },
 ];
 
 const ProductFamily = () => {
@@ -76,7 +86,8 @@ const ProductFamily = () => {
             stablecoin transfers on any chain. Stabletrust Pay is the flagship
             app, Stabletrust Pro is designed for institutional teams, and the SDK
             and API let partners build the same functionality into their own
-            products.
+            products. The Compliance Dashboard supports authorized review and
+            selective disclosure workflows.
           </p>
         </div>
 
@@ -87,7 +98,7 @@ const ProductFamily = () => {
                 product.featured
                   ? "border-primary-blue bg-[#eef8fd]"
                   : "border-line bg-white"
-              } ${product.id === "05" ? "md:col-span-2" : ""}`}
+              }`}
               key={product.id}
             >
               <div className="flex items-start justify-between gap-4">
