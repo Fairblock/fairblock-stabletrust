@@ -4,13 +4,15 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[url(/footer.svg)] bg-no-repeat bg-cover wrapper flex flex-row! justify-between! gap-10! py-8">
-      <div className="flex flex-col gap-[90px] sm:gap-4 items-start justify-between">
-        <img className="h-10" src="/stable-trust-logo.svg" alt="stable-trust" />
-        <p className="font-charter hidden sm:block">
-          © 2025 Fairblock. All rights reserved.
-        </p>
-        <div className="flex gap-4 text-primary-blue text-2xl">
+    <footer className="bg-[#edf3f6]">
+      <div className="wrapper grid gap-12 py-14 sm:grid-cols-[1fr_auto] sm:py-16">
+        <div>
+          <img className="h-8" src="/stable-trust-logo.svg" alt="Stabletrust" />
+          <p className="mt-5 max-w-sm leading-6 text-muted">
+            Confidential stablecoin infrastructure for payments, commerce,
+            treasury, and institutional finance.
+          </p>
+          <div className="mt-6 flex gap-4 text-xl text-[#3f9fce]">
           <a
             href="https://discord.com/invite/fairblock"
             rel="noopener noreferrer"
@@ -34,8 +36,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex gap-2 sm:text-lg">
-        <div className="flex flex-col gap-2 items-start text-left w-1/2">
+
+        <div className="grid grid-cols-2 gap-10 text-sm">
+          <div className="flex min-w-28 flex-col items-start gap-3 text-left">
+            <p className="section-label mb-1">Resources</p>
           <a
             href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
             rel="noopener noreferrer"
@@ -64,8 +68,9 @@ const Footer = () => {
           >
             Brand Kit
           </a>
-        </div>
-        <div className="flex flex-col gap-2 items-start text-left w-1/2">
+          </div>
+          <div className="flex min-w-28 flex-col items-start gap-3 text-left">
+            <p className="section-label mb-1">Company</p>
           <a
             href="https://www.fairblock.network/careers"
             rel="noopener noreferrer"
@@ -80,9 +85,13 @@ const Footer = () => {
           >
             Building Program
           </a>
+          </div>
+        </div>
+        <div className="border-t border-[#cbd6dd] pt-6 text-sm text-muted sm:col-span-2">
+          © 2026 Fairblock. All rights reserved.
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;

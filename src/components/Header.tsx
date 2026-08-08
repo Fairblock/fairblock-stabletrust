@@ -6,20 +6,20 @@ const Header = () => {
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState<boolean>(false);
 
   return (
-    <>
-      <div className="bg-white flex justify-between px-4 sm:px-12 py-4 relative z-10">
+    <header className="sticky top-0 z-50 border-b border-line bg-white/92 backdrop-blur-md">
+      <div className="wrapper flex-row! items-center justify-between py-4">
         {/* APP LOGO */}
         <div className="flex gap-2 items-center">
           <img
             className="h-6 sm:h-8"
             src="/stable-trust-logo.svg"
-            alt="app-logo"
+            alt="Stabletrust"
           />
         </div>
 
         {/* NAV MENU */}
-        <div className="hidden sm:flex gap-12 items-center">
-          <div className="flex gap-4">
+        <nav aria-label="Primary navigation" className="hidden sm:flex gap-8 items-center">
+          <div className="flex items-center gap-6 text-sm text-muted">
             <a
               href="https://app.stabletrust.io/how-it-works.html"
               rel="noopener noreferrer"
@@ -28,33 +28,35 @@ const Header = () => {
               How it works
             </a>
             <a
+              href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Documentation
+            </a>
+            <a
               href="https://transparency-dashboard.fairblock.network/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Transparency Dashboard
             </a>
-            {/* <a
-              href="https://stabletrust.fairblock.network/how-it-works.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              FAQ
-            </a> */}
           </div>
           <a
-            className="hidden sm:block primary-button"
+            className="primary-button"
             href="https://app.stabletrust.io/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Launch App
           </a>
-        </div>
+        </nav>
 
         {/* MOBILE NAV MENU BUTTON */}
         <button
           className="cursor-pointer sm:hidden"
+          aria-expanded={isMobileNavbarOpen}
+          aria-label={isMobileNavbarOpen ? "Close navigation" : "Open navigation"}
           onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}
         >
           {isMobileNavbarOpen ? (
@@ -66,12 +68,13 @@ const Header = () => {
       </div>
 
       {/* MOBILE NAV MENU */}
-      <div
+      <nav
+        aria-label="Mobile navigation"
         className={`${
           isMobileNavbarOpen
-            ? "opacity-100 translate-y-20"
-            : "opacity-0 -translate-y-36"
-        } absolute top-0 left-1/2 -translate-x-1/2 bg-white border-2 border-primary-blue duration-300 flex sm:hidden flex-col gap-4 p-2 rounded-lg text-center w-[90vw]`}
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-3 pointer-events-none"
+        } absolute left-4 right-4 top-[72px] border border-line bg-white duration-200 flex sm:hidden flex-col p-2 rounded-xl shadow-xl text-left`}
       >
         <a
           className="py-2"
@@ -82,6 +85,14 @@ const Header = () => {
           How it works
         </a>
         <a
+          className="py-3 px-3"
+          href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Documentation
+        </a>
+        <a
           className="py-2"
           href="https://transparency-dashboard.fairblock.network/"
           rel="noopener noreferrer"
@@ -89,16 +100,16 @@ const Header = () => {
         >
           Transparency Dashboard
         </a>
-        {/* <a
-          className="py-2"
-          href="https://stabletrust.fairblock.network/how-it-works.html"
+        <a
+          className="primary-button mt-2 w-full!"
+          href="https://app.stabletrust.io/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          FAQ
-        </a> */}
-      </div>
-    </>
+          Launch App
+        </a>
+      </nav>
+    </header>
   );
 };
 

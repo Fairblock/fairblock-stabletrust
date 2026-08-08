@@ -38,23 +38,31 @@ const CARD_DETAILS = [
 
 const Card = ({ imgUrl, title, content }: CardProps) => {
   return (
-    <div className="bg-white rounded-xl">
-      <img className="border-b-2 border-primary-blue min-h-56 object-cover rounded-t-xl" src={imgUrl} alt={title} />
-      <div className="p-6">
-        <h5 className="font-charter font-bold mb-2 text-xl sm:text-2xl">{title}</h5>
-        <p className="font-sf-pro-display text-lg sm:text-xl">{content}</p>
+    <article className="overflow-hidden rounded-xl border border-line bg-white">
+      <div className="h-52 overflow-hidden border-b border-line bg-[#eaf5fb]">
+        <img className="h-full w-full object-cover" src={imgUrl} alt="" />
       </div>
-    </div>
+      <div className="p-6 sm:p-7">
+        <h3 className="font-charter text-2xl leading-tight tracking-[-0.02em]">
+          {title}
+        </h3>
+        <p className="mt-3 leading-6 text-muted">{content}</p>
+      </div>
+    </article>
   );
 };
 
 const Section05 = () => {
   return (
-    <div className="wrapper bg-linear-to-b from-primary-blue via-primary-blue to-white py-20 sm:py-28">
-      <h3 className="font-bold font-charter text-2xl sm:text-4xl">
-        Why Stabletrust
-      </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="border-b border-line bg-surface">
+      <div className="wrapper py-20 sm:py-28">
+        <p className="section-label mb-5">Product principles</p>
+        <h2 className="section-title">Why Stabletrust</h2>
+        <p className="section-copy mt-6">
+          Confidentiality designed for production environments—not isolated
+          experiments.
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {CARD_DETAILS.map((card) => {
           return (
             <Card
@@ -66,8 +74,9 @@ const Section05 = () => {
             />
           );
         })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

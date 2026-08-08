@@ -1,31 +1,98 @@
 .primary-button {
-  background-color: black;
-  border-radius: 12px;
+  align-items: center;
+  background-color: #0b0d10;
+  border: 1px solid #0b0d10;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
+  display: inline-flex;
   font-family: "sf-pro-display";
-  font-weight: 400;
-  padding: 8px 16px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.625rem 1.125rem;
+  transition: background-color 180ms ease, border-color 180ms ease,
+    transform 180ms ease;
   width: fit-content;
 }
 
-.wrapper {
+.primary-button:hover {
+  background-color: #26313a;
+  border-color: #26313a;
+  transform: translateY(-1px);
+}
+
+.secondary-button {
   align-items: center;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #c9d2d9;
+  border-radius: 10px;
+  color: #0b0d10;
+  display: inline-flex;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.625rem 1.125rem;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.secondary-button:hover {
+  background: #f3f7fa;
+  border-color: #9eabb5;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: center;
-  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  width: 100%;
+}
+
+.wrapper.grid {
+  display: grid;
+}
+
+.section-label {
+  color: #4f5d68;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "charter", serif;
+  font-size: clamp(2rem, 4vw, 3.75rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.section-copy {
+  color: #4d5861;
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  font-weight: 300;
+  line-height: 1.55;
+  max-width: 42rem;
 }
 
 @media screen and (width >= 640px) {
   .wrapper {
-    align-items: start;
-    gap: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    /* text-align: left; */
+  }
+}
+
+@media screen and (width >= 1280px) {
+  .wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }

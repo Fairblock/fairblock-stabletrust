@@ -13,15 +13,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="xl:relative mx-auto max-w-screen-2xl w-full!">
+    <div className="relative overflow-hidden bg-white text-ink">
       <Header />
-      <Section01 />
-      <UniversalFrontend />
-      <Section02 />
-      <Section03 />
-      <Section04 />
-      <Section05 />
-      <Section06 />
+      <main>
+        <Section01 />
+        <UniversalFrontend />
+        <Section02 />
+        <Section03 />
+        <Section04 />
+        <Section05 />
+        <Section06 />
+      </main>
       <Footer />
     </div>
   );

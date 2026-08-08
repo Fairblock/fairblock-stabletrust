@@ -1,6 +1,3 @@
-// components
-import ScrollStepSection from "./custom/ScrollStepSection";
-
 const STEPS = [
   {
     title: "Payments",
@@ -42,53 +39,48 @@ const STEPS = [
 
 const Section04 = () => {
   return (
-    <div className="wrapper py-20 sm:py-28">
-      {/* MOBILE SCREEN */}
-      <div className="lg:hidden">
-        <h3 className="font-charter font-bold mb-8 text-2xl sm:text-4xl">
-          Built for Real Business
-        </h3>
-        <div className="flex flex-col gap-4 items-center">
-          {STEPS.map((step) => {
-            return (
-              <div
-                key={step.title}
-                className="border border-primary-blue flex items-center rounded-xl h-[180px] sm:h-60 w-full"
-              >
-                <div className="flex-1 p-4 text-left">
-                  <h3 className="font-charter font-bold mb-2 text-lg">
-                    {step.title}
-                  </h3>
-                  <p className="font-sf-pro-display sm:text-lg">
-                    {step.description}
-                  </p>
-                </div>
-
-                <div className="flex-1 h-full">
-                  <img
-                    className="h-full w-full object-cover rounded-tr-xl rounded-br-xl"
-                    src={step.image}
-                    alt={step.title}
-                  />
-                </div>
-              </div>
-            );
-          })}
+    <section className="border-b border-line bg-white">
+      <div className="wrapper py-20 sm:py-28">
+        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p className="section-label mb-5">Institutional use cases</p>
+            <h2 className="section-title">Built for Real Business</h2>
+          </div>
           <a
-            className="primary-button sm:hidden mt-8"
+            className="secondary-button"
             href="https://docs.fairblock.network/docs/confidential_transfers/confidential_transactions"
             rel="noopener noreferrer"
             target="_blank"
           >
-            See More Use Cases
+            View all use cases
           </a>
         </div>
+
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {STEPS.map((step, index) => (
+            <article
+              className="group overflow-hidden rounded-xl border border-line bg-white transition-transform duration-200 hover:-translate-y-1"
+              key={step.title}
+            >
+              <div className="flex h-36 items-center justify-center overflow-hidden border-b border-line bg-surface">
+                <img
+                  className="h-full w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.03]"
+                  src={step.image}
+                  alt=""
+                />
+              </div>
+              <div className="p-6">
+                <span className="font-mono text-xs text-[#70808b]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-4 font-charter text-2xl">{step.title}</h3>
+                <p className="mt-3 leading-6 text-muted">{step.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-      {/* LAPTOP SCREEN */}
-      <div className="hidden lg:block w-full">
-        <ScrollStepSection steps={STEPS} />
-      </div>
-    </div>
+    </section>
   );
 };
 

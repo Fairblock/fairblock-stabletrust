@@ -31,39 +31,33 @@ const CARD_DETAILS = [
 
 const Card = ({ id, imgUrl, title, content }: CardProps) => {
   return (
-    <div
-      className={`${
-        id !== "03" ? "sm:border-r border-primary-blue pr-4" : ""
-      } flex-1`}
-    >
-      <div className="lg:px-2">
-        <span className="hidden sm:block font-sf-pro-display text-primary-blue">
-          {id}
-        </span>
+    <article className="flex flex-col rounded-xl border border-line bg-white p-6 sm:p-7">
+      <div className="flex items-center justify-between border-b border-line pb-4">
+        <span className="font-mono text-xs tracking-[0.14em] text-muted">{id}</span>
+        <span className="h-2 w-2 rounded-full bg-primary-blue" />
+      </div>
+      <div className="flex flex-1 flex-col">
         <img
-          className="h-24 mt-12 lg:mt-16 mb-6 mx-auto"
+          className="my-9 h-24 w-full object-contain"
           src={imgUrl}
           alt={title}
         />
-        <span className="sm:hidden font-sf-pro-display text-primary-blue text-lg">
-          {id}
-        </span>
-        <h5 className="font-charter font-bold mb-2 text-xl sm:text-2xl">
+        <h3 className="font-charter text-2xl tracking-[-0.02em]">
           {title}
-        </h5>
-        <p className="font-sf-pro-display text-lg sm:text-xl">{content}</p>
+        </h3>
+        <p className="mt-3 leading-6 text-muted">{content}</p>
       </div>
-    </div>
+    </article>
   );
 };
 
 const Section03 = () => {
   return (
-    <div className="wrapper py-20 sm:py-28">
-      <h3 className="font-bold font-charter text-2xl sm:text-4xl">
-        Protect What Matters
-      </h3>
-      <div className="flex flex-col gap-4 sm:flex-row">
+    <section className="border-b border-line bg-surface">
+      <div className="wrapper py-20 sm:py-28">
+        <p className="section-label mb-5">Who it protects</p>
+        <h2 className="section-title">Protect What Matters</h2>
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {CARD_DETAILS.map((card) => {
           return (
             <Card
@@ -75,8 +69,9 @@ const Section03 = () => {
             />
           );
         })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

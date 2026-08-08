@@ -1,30 +1,26 @@
 const BackgroundVideo = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden -z-10">
+    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-0 z-10 bg-linear-to-r from-white via-white/94 to-white/10 sm:via-white/76" />
       <video
         className="
           absolute
           -rotate-135
-          w-[500px]
-          sm:w-[1200px]
+          opacity-55
+          w-[620px]
+          sm:w-[1080px]
 
-          /* mobile center*/
-          left-1/2 top-1/3 -translate-x-1/2
+          left-1/2 top-[38%] -translate-x-1/2
 
-          /* desktop position */
-          sm:translate-x-36
-          sm:translate-y-0
+          sm:translate-x-44
           sm:left-auto
-          sm:right-0
-          sm:-top-32
+          sm:right-[-5rem]
+          sm:top-[-8rem]
         "
         autoPlay
         loop
         muted
         playsInline
-        // onLoadedMetadata={(e) => {
-        //   e.currentTarget.currentTime = 3; // ⬅ start at 3 seconds
-        // }}
       >
         <source src="/s01-hero-animation.mp4" type="video/mp4" />
       </video>
