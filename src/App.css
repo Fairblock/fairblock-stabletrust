@@ -23,6 +23,18 @@
   transform: translateY(-1px);
 }
 
+.header-nav-item {
+  align-items: center;
+  display: inline-flex;
+  font-family: "sf-pro-display", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
 .secondary-button {
   align-items: center;
   background: rgba(255, 255, 255, 0.78);

@@ -19,8 +19,9 @@ const Header = () => {
 
         {/* NAV MENU */}
         <nav aria-label="Primary navigation" className="hidden sm:flex gap-8 items-center">
-          <div className="flex items-center gap-6 text-sm text-muted">
+          <div className="flex items-center gap-6 text-muted">
             <a
+              className="header-nav-item"
               href="https://app.stabletrust.io/how-it-works.html"
               rel="noopener noreferrer"
               target="_blank"
@@ -28,6 +29,7 @@ const Header = () => {
               How it works
             </a>
             <a
+              className="header-nav-item"
               href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
               rel="noopener noreferrer"
               target="_blank"
@@ -35,6 +37,7 @@ const Header = () => {
               Documentation
             </a>
             <a
+              className="header-nav-item"
               href="https://transparency-dashboard.fairblock.network/"
               rel="noopener noreferrer"
               target="_blank"
@@ -43,7 +46,7 @@ const Header = () => {
             </a>
           </div>
           <a
-            className="primary-button"
+            className="primary-button header-nav-item"
             href="https://app.stabletrust.io/"
             rel="noopener noreferrer"
             target="_blank"
@@ -77,7 +80,7 @@ const Header = () => {
         } absolute left-4 right-4 top-[72px] border border-line bg-white duration-200 flex sm:hidden flex-col p-2 rounded-xl shadow-xl text-left`}
       >
         <a
-          className="py-2"
+          className="header-nav-item px-3 py-2"
           href="https://app.stabletrust.io/how-it-works.html"
           rel="noopener noreferrer"
           target="_blank"
@@ -85,7 +88,7 @@ const Header = () => {
           How it works
         </a>
         <a
-          className="py-3 px-3"
+          className="header-nav-item px-3 py-2"
           href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
           rel="noopener noreferrer"
           target="_blank"
@@ -93,7 +96,7 @@ const Header = () => {
           Documentation
         </a>
         <a
-          className="py-2"
+          className="header-nav-item px-3 py-2"
           href="https://transparency-dashboard.fairblock.network/"
           rel="noopener noreferrer"
           target="_blank"
@@ -101,7 +104,7 @@ const Header = () => {
           Transparency Dashboard
         </a>
         <a
-          className="primary-button mt-2 w-full!"
+          className="primary-button header-nav-item mt-2 w-full!"
           href="https://app.stabletrust.io/"
           rel="noopener noreferrer"
           target="_blank"
