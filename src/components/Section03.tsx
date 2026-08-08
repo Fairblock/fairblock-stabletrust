@@ -18,14 +18,14 @@ const CARD_DETAILS = [
     imgUrl: "/s03-traders.svg",
     title: "Traders",
     content:
-      "Stop signaling your moves onchain to bots and copy traders. Protect your strategy and capital.",
+      "Keep positions, OTC transactions, and execution strategies confidential. Stop bots and copy traders from reading your moves.",
   },
   {
     id: "03",
     imgUrl: "/s03-business-and-institutions.svg",
     title: "Businesses and Institutions",
     content:
-      "Keep payroll and commercial terms confidential. Protect your edge and regulatory standing.",
+      "Keep payroll, payouts, treasury operations, revenue, business relationships, and supply chain transfers confidential. Protect your commercial edge and regulatory standing.",
   },
 ];
 
