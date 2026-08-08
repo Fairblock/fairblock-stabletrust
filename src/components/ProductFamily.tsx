@@ -52,7 +52,7 @@ const PRODUCTS: Product[] = [
   {
     id: "05",
     name: "CUSD",
-    label: "Separate flagship stablecoin",
+    label: "Flagship Confidential Stablecoin With Incentives",
     description:
       "Fairblock's flagship confidential stablecoin, built with M0, PayPal, and MoonPay. It uses the same confidentiality infrastructure while offering additional incentives, including yield and points, for users and partners.",
     href: "https://cusd.fairblock.network/",
