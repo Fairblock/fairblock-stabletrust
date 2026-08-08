@@ -101,13 +101,6 @@ const Footer = () => {
           >
             Careers
           </a>
-          <a
-            href="https://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Building Program
-          </a>
           </div>
         </div>
         <div className="border-t border-[#cbd6dd] pt-6 text-sm text-muted sm:col-span-2">
