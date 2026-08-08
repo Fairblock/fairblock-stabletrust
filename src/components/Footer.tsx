@@ -7,7 +7,16 @@ const Footer = () => {
     <footer className="bg-[#edf3f6]">
       <div className="wrapper grid gap-12 py-14 sm:grid-cols-[1fr_auto] sm:py-16">
         <div>
-          <img className="h-8" src="/stable-trust-logo.svg" alt="Stabletrust" />
+          <div className="flex items-center gap-2">
+            <img
+              className="h-8"
+              src="/stable-trust-logo.svg"
+              alt="Stabletrust Pay"
+            />
+            <span className="rounded border border-[#cbd6dd] px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
+              PAY
+            </span>
+          </div>
           <p className="mt-5 max-w-sm leading-6 text-muted">
             Fairblock's flagship app for confidential stablecoin transfers
             across chains.

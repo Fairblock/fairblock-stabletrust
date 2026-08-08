@@ -13,8 +13,11 @@ const Header = () => {
           <img
             className="h-6 sm:h-8"
             src="/stable-trust-logo.svg"
-            alt="Stabletrust"
+            alt="Stabletrust Pay"
           />
+          <span className="rounded border border-line px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
+            PAY
+          </span>
         </div>
 
         {/* NAV MENU */}

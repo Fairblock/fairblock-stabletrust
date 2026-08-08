@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Section01 from "./components/Section01";
 import UniversalFrontend from "./components/UniversalFrontend";
+import ProductFamily from "./components/ProductFamily";
 import Section02 from "./components/Section02";
 import Section03 from "./components/Section03";
 import Section04 from "./components/Section04";
@@ -19,6 +20,7 @@ function App() {
       <main>
         <Section01 />
         <UniversalFrontend />
+        <ProductFamily />
         <Section02 />
         <Section03 />
         <Section04 />
