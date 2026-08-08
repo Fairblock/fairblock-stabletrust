@@ -21,8 +21,8 @@ const Header = () => {
         </div>
 
         {/* NAV MENU */}
-        <nav aria-label="Primary navigation" className="hidden sm:flex gap-8 items-center">
-          <div className="flex items-center gap-6 text-muted">
+        <nav aria-label="Primary navigation" className="hidden sm:flex gap-5 xl:gap-8 items-center">
+          <div className="flex items-center gap-4 xl:gap-6 text-muted">
             <a
               className="header-nav-item"
               href="https://app.stabletrust.io/how-it-works.html"
@@ -46,6 +46,9 @@ const Header = () => {
               target="_blank"
             >
               Transparency Dashboard
+            </a>
+            <a className="header-nav-item" href="#compliance-architecture">
+              Compliance Architecture
             </a>
           </div>
           <a
@@ -105,6 +108,13 @@ const Header = () => {
           target="_blank"
         >
           Transparency Dashboard
+        </a>
+        <a
+          className="header-nav-item px-3 py-2"
+          href="#compliance-architecture"
+          onClick={() => setIsMobileNavbarOpen(false)}
+        >
+          Compliance Architecture
         </a>
         <a
           className="primary-button header-nav-item mt-2 w-full!"
