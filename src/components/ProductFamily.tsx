@@ -15,8 +15,8 @@ const PRODUCTS = [
     label: "For builders",
     description:
       "Embed confidential transfers into wallets, neobanks, agents, and partner applications for every asset or a specific use case.",
-    href: "https://www.fairblock.network/products/stabletrust-sdk",
-    linkLabel: "Explore the SDK",
+    href: "https://docs.fairblock.network/ct/guides/build/building-with-sdk",
+    linkLabel: "Build with the SDK",
     featured: false,
   },
   {
@@ -25,8 +25,8 @@ const PRODUCTS = [
     label: "For integrations",
     description:
       "Give partner systems programmatic access across all assets and chains, or only the assets and networks their product needs.",
-    href: "https://www.fairblock.network/",
-    linkLabel: "Visit the developer platform",
+    href: "https://docs.fairblock.network/ct/guides/build/agentic-api",
+    linkLabel: "Build with the API",
     featured: false,
   },
   {

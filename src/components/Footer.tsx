@@ -64,11 +64,18 @@ const Footer = () => {
             Github
           </a>
           <a
-            href="https://www.fairblock.network/"
+            href="https://docs.fairblock.network/ct/guides/build/building-with-sdk"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Developer Platform
+            Stabletrust SDK
+          </a>
+          <a
+            href="https://docs.fairblock.network/ct/guides/build/agentic-api"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Stabletrust API
           </a>
           <a
             href="https://www.fairblock.network/articles"
