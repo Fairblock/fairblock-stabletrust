@@ -24,7 +24,7 @@ const PRODUCTS = [
     name: "Stabletrust API",
     label: "For integrations",
     description:
-      "Power confidential agentic payments or integrate confidential transfers through Turnkey and Privy APIs, across every supported asset and chain or only the networks your product needs.",
+      "Use the Stabletrust API to enable confidential agentic payments or add confidential transfers to applications built with Turnkey or Privy. Support every available asset and chain, or only the ones your product needs.",
     href: "https://docs.fairblock.network/ct/guides/build/agentic-api",
     linkLabel: "Build with the API",
     featured: false,
@@ -34,7 +34,7 @@ const PRODUCTS = [
     name: "CUSD",
     label: "Separate flagship stablecoin",
     description:
-      "Fairblock's flagship confidential stablecoin with M0, PayPal, and MoonPay uses the same technology, with added incentives for users and partners such as yield and points.",
+      "Fairblock's flagship confidential stablecoin, built with M0, PayPal, and MoonPay. It uses the same confidentiality infrastructure while offering additional incentives, including yield and points, for users and partners.",
     href: "https://cusd.fairblock.network/",
     linkLabel: "Visit CUSD",
     featured: false,
