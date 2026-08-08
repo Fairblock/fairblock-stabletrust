@@ -8,7 +8,7 @@ const Section01 = () => {
       <div className="wrapper relative z-10 min-h-[640px] justify-center py-20 sm:min-h-[700px] sm:py-28">
         <div className="max-w-[980px]">
           <p className="section-label mb-6">
-            Universal confidential stablecoin app
+            Stabletrust Pay
           </p>
           <h1 className="font-charter text-[2.65rem] leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-[4rem]">
             One Universal App.
@@ -20,9 +20,10 @@ const Section01 = () => {
             <span className="italic text-[#298ec5]">All Confidential.</span>
           </h1>
           <p className="section-copy mt-7 max-w-[660px]">
-            Stabletrust is one universal application for confidential
-            stablecoin payments across every blockchain ecosystem. Move value
-            without exposing amounts, balances, or business relationships.
+            Stabletrust Pay is Fairblock's flagship app for confidential
+            stablecoin transfers across chains. Use one application for every
+            stablecoin, on every chain, while keeping amounts, balances, and
+            business relationships private.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -31,7 +32,7 @@ const Section01 = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Launch Stabletrust
+              Launch Stabletrust Pay
             </a>
             <a
               className="secondary-button"

@@ -9,8 +9,8 @@ const Footer = () => {
         <div>
           <img className="h-8" src="/stable-trust-logo.svg" alt="Stabletrust" />
           <p className="mt-5 max-w-sm leading-6 text-muted">
-            Confidential stablecoin infrastructure for payments, commerce,
-            treasury, and institutional finance.
+            Fairblock's flagship app for confidential stablecoin transfers
+            across chains.
           </p>
           <div className="mt-6 flex gap-4 text-xl text-[#3f9fce]">
           <a
@@ -53,6 +53,13 @@ const Footer = () => {
             target="_blank"
           >
             Github
+          </a>
+          <a
+            href="https://www.fairblock.network/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Developer Platform
           </a>
           <a
             href="https://www.fairblock.network/articles"
