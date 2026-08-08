@@ -1,4 +1,15 @@
-const PRODUCTS = [
+type Product = {
+  id: string;
+  name: string;
+  label: string;
+  description: string;
+  href?: string;
+  linkLabel?: string;
+  featured: boolean;
+  comingSoon?: boolean;
+};
+
+const PRODUCTS: Product[] = [
   {
     id: "01",
     name: "Stabletrust Pay",
@@ -11,6 +22,15 @@ const PRODUCTS = [
   },
   {
     id: "02",
+    name: "Stabletrust Pro",
+    label: "Coming soon",
+    description:
+      "The institutional edition of Stabletrust Pay, with MPC-backed wallets, work email and passkey access, team management, and batch payroll, treasury, and supply chain transfers.",
+    featured: false,
+    comingSoon: true,
+  },
+  {
+    id: "03",
     name: "Stabletrust SDK",
     label: "For builders",
     description:
@@ -20,7 +40,7 @@ const PRODUCTS = [
     featured: false,
   },
   {
-    id: "03",
+    id: "04",
     name: "Stabletrust API",
     label: "For integrations",
     description:
@@ -30,7 +50,7 @@ const PRODUCTS = [
     featured: false,
   },
   {
-    id: "04",
+    id: "05",
     name: "CUSD",
     label: "Separate flagship stablecoin",
     description:
@@ -54,8 +74,9 @@ const ProductFamily = () => {
           <p className="section-copy mt-6">
             Stabletrust is Fairblock's product for confidential and compliant
             stablecoin transfers on any chain. Stabletrust Pay is the flagship
-            app, while the SDK and API let partners build the same functionality
-            into their own products.
+            app, Stabletrust Pro is designed for institutional teams, and the SDK
+            and API let partners build the same functionality into their own
+            products.
           </p>
         </div>
 
@@ -66,7 +87,7 @@ const ProductFamily = () => {
                 product.featured
                   ? "border-primary-blue bg-[#eef8fd]"
                   : "border-line bg-white"
-              }`}
+              } ${product.id === "05" ? "md:col-span-2" : ""}`}
               key={product.id}
             >
               <div className="flex items-start justify-between gap-4">
@@ -87,17 +108,23 @@ const ProductFamily = () => {
               <p className="mt-4 max-w-xl leading-6 text-muted">
                 {product.description}
               </p>
-              <a
-                className="mt-auto pt-8 text-sm font-semibold text-[#237faa]"
-                href={product.href}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {product.linkLabel}
-                <span aria-hidden="true" className="ml-2">
-                  ↗
+              {product.comingSoon ? (
+                <span className="mt-auto pt-8 text-sm font-semibold text-muted">
+                  Coming soon
                 </span>
-              </a>
+              ) : product.href && product.linkLabel ? (
+                <a
+                  className="mt-auto pt-8 text-sm font-semibold text-[#237faa]"
+                  href={product.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {product.linkLabel}
+                  <span aria-hidden="true" className="ml-2">
+                    ↗
+                  </span>
+                </a>
+              ) : null}
             </article>
           ))}
         </div>
