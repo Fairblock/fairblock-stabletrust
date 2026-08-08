@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
 
-        <div className="grid grid-cols-2 gap-10 text-sm">
+        <div className="text-sm">
           <div className="flex min-w-28 flex-col items-start gap-3 text-left">
             <p className="section-label mb-1">Resources</p>
           <a
@@ -90,16 +90,6 @@ const Footer = () => {
             target="_blank"
           >
             Brand Kit
-          </a>
-          </div>
-          <div className="flex min-w-28 flex-col items-start gap-3 text-left">
-            <p className="section-label mb-1">Company</p>
-          <a
-            href="https://www.fairblock.network/careers"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Careers
           </a>
           </div>
         </div>
