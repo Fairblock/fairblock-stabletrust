@@ -1,6 +1,6 @@
 const UniversalFrontend = () => {
   return (
-    <div className="wrapper py-20 sm:py-28">
+    <div className="wrapper pt-8 pb-20 sm:pt-12 sm:pb-28">
       <h3 className="font-bold font-charter text-2xl sm:text-4xl">
         One Application. Every Stablecoin. Every Chain.
       </h3>
