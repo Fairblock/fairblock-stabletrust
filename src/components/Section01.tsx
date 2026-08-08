@@ -1,25 +1,28 @@
 // components
 import BackgroundVideo from "./custom/BackgroundVideo";
-import TypingTextAnimation from "./custom/TypingTextAnimation";
-
-const words = ["Payments", "Trading", "Commerce", "Payroll", "Strategic Deals"];
 
 const Section01 = () => {
   return (
     <section className="relative isolate overflow-hidden border-b border-line bg-white">
       <BackgroundVideo />
       <div className="wrapper relative z-10 min-h-[640px] justify-center py-20 sm:min-h-[700px] sm:py-28">
-        <div className="max-w-[780px]">
-          <p className="section-label mb-6">Confidential stablecoin infrastructure</p>
-          <h1 className="font-charter text-[2.65rem] leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
-            Confidential Stablecoins for{" "}
-            <span className="italic text-[#298ec5]">
-              <TypingTextAnimation texts={words} />
+        <div className="max-w-[980px]">
+          <p className="section-label mb-6">
+            Universal confidential stablecoin app
+          </p>
+          <h1 className="font-charter text-[2.65rem] leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-[4rem]">
+            One Universal App.
+            <br />
+            <span className="lg:whitespace-nowrap">
+              Every Stablecoin. Every Chain.
             </span>
+            <br />
+            <span className="italic text-[#298ec5]">All Confidential.</span>
           </h1>
-          <p className="section-copy mt-7 max-w-[610px]">
-            Move stablecoins without exposing amounts, balances, or business
-            relationships. You decide who can see what, and when.
+          <p className="section-copy mt-7 max-w-[660px]">
+            Stabletrust is one universal application for confidential
+            stablecoin payments across every blockchain ecosystem. Move value
+            without exposing amounts, balances, or business relationships.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -43,9 +46,9 @@ const Section01 = () => {
 
         <div className="mt-14 grid w-full max-w-[760px] grid-cols-1 border-y border-line bg-white/72 sm:grid-cols-3">
           {[
-            ["Private by default", "Amounts and balances remain confidential"],
-            ["Selective disclosure", "Reveal only what a review requires"],
-            ["Chain-agnostic", "Built for stablecoins across ecosystems"],
+            ["Every stablecoin", "One confidential interface across stablecoin ecosystems"],
+            ["Every chain", "Built for multichain payment flows"],
+            ["Confidential by default", "Amounts and balances stay private"],
           ].map(([title, description]) => (
             <div
               className="border-b border-line px-0 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0"
