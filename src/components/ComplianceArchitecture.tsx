@@ -23,7 +23,10 @@ const COMPLIANCE_LAYERS = [
 
 const ComplianceArchitecture = () => {
   return (
-    <section className="border-b border-line bg-[#0b0d10] text-white">
+    <section
+      className="scroll-mt-20 border-b border-line bg-[#0b0d10] text-white"
+      id="compliance-architecture"
+    >
       <div className="wrapper py-20 sm:py-28">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div>
