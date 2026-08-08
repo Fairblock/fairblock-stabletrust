@@ -3,7 +3,7 @@ import "./App.css";
 // components
 import Header from "./components/Header";
 import Section01 from "./components/Section01";
-import UniversalFrontend from "./components/UniversalFrontend";
+import UniversalApp from "./components/UniversalApp";
 import ProductFamily from "./components/ProductFamily";
 import Section02 from "./components/Section02";
 import Section03 from "./components/Section03";
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <main>
         <Section01 />
-        <UniversalFrontend />
+        <UniversalApp />
         <ProductFamily />
         <Section02 />
         <Section03 />

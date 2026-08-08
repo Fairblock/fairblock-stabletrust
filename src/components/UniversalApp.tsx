@@ -1,11 +1,11 @@
-const UniversalFrontend = () => {
+const UniversalApp = () => {
   return (
     <section className="border-b border-line bg-surface">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-28 lg:gap-20">
         <div>
           <p className="section-label mb-5">Flagship application</p>
           <h2 className="section-title max-w-[620px]">
-            The universal home for confidential stablecoin transfers.
+            The universal app for confidential stablecoin transfers.
           </h2>
           <p className="section-copy mt-6">
             Stabletrust Pay is the app users open to send stablecoins
@@ -72,4 +72,4 @@ const UniversalFrontend = () => {
   );
 };
 
-export default UniversalFrontend;
+export default UniversalApp;

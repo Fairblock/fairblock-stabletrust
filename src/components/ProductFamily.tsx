@@ -4,7 +4,7 @@ const PRODUCTS = [
     name: "Stabletrust Pay",
     label: "Flagship application",
     description:
-      "The universal frontend for users to connect a wallet and send confidential stablecoin transfers across chains.",
+      "The universal app for users to connect a wallet and send confidential stablecoin transfers across chains.",
     href: "https://app.stabletrust.io/",
     linkLabel: "Launch Stabletrust Pay",
     featured: true,
@@ -31,12 +31,12 @@ const PRODUCTS = [
   },
   {
     id: "04",
-    name: "cUSD",
+    name: "CUSD",
     label: "Separate flagship stablecoin",
     description:
       "Fairblock's flagship confidential stablecoin with M0 and PayPal uses the same technology and has its own dedicated website.",
     href: "https://cusd.fairblock.network/",
-    linkLabel: "Visit cUSD",
+    linkLabel: "Visit CUSD",
     featured: false,
   },
 ];
