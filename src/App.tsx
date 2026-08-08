@@ -10,7 +10,6 @@ import Section03 from "./components/Section03";
 import Section04 from "./components/Section04";
 import Section05 from "./components/Section05";
 import ComplianceArchitecture from "./components/ComplianceArchitecture";
-import Section06 from "./components/Section06";
 import Footer from "./components/Footer";
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <Section04 />
         <Section05 />
         <ComplianceArchitecture />
-        <Section06 />
       </main>
       <Footer />
     </div>
