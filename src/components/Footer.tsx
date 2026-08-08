@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="flex min-w-28 flex-col items-start gap-3 text-left">
             <p className="section-label mb-1">Resources</p>
           <a
-            href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+            href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
             rel="noopener noreferrer"
             target="_blank"
           >

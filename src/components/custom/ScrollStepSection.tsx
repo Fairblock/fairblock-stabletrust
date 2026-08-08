@@ -39,7 +39,7 @@ export default function ScrollStepSection({ steps }: Props) {
             </h3>
             <a
               className="primary-button hidden sm:block"
-              href="https://docs.fairblock.network/docs/confidential_transfers/confidential_transactions"
+              href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
               rel="noopener noreferrer"
               target="_blank"
             >

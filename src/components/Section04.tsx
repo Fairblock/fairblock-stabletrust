@@ -48,7 +48,7 @@ const Section04 = () => {
           </div>
           <a
             className="secondary-button"
-            href="https://docs.fairblock.network/docs/confidential_transfers/confidential_transactions"
+            href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
             rel="noopener noreferrer"
             target="_blank"
           >

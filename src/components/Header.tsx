@@ -30,7 +30,7 @@ const Header = () => {
             </a>
             <a
               className="header-nav-item"
-              href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+              href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -89,7 +89,7 @@ const Header = () => {
         </a>
         <a
           className="header-nav-item px-3 py-2"
-          href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+          href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
           rel="noopener noreferrer"
           target="_blank"
         >

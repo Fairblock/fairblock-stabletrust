@@ -36,7 +36,7 @@ const Section01 = () => {
             </a>
             <a
               className="secondary-button"
-              href="https://docs.fairblock.network/docs/ConfidentialStablecoins"
+              href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
               rel="noopener noreferrer"
               target="_blank"
             >
