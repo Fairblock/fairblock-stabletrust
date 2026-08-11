@@ -59,10 +59,10 @@ const Section04 = () => {
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((step, index) => (
             <article
-              className="group overflow-hidden rounded-xl border border-line bg-white transition-transform duration-200 hover:-translate-y-1"
+              className="group overflow-hidden border border-line bg-white transition-transform duration-200 hover:-translate-y-1"
               key={step.title}
             >
-              <div className="flex h-36 items-center justify-center overflow-hidden border-b border-line bg-surface">
+              <div className="flex h-36 items-center justify-center overflow-hidden border-b border-line bg-white">
                 <img
                   className="h-full w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.03]"
                   src={step.image}

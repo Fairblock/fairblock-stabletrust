@@ -18,7 +18,7 @@ const Section02 = () => {
           </div>
         </div>
 
-        <figure className="relative overflow-hidden rounded-2xl border border-[#bfcbd3] bg-[#f8fafb] shadow-[0_18px_50px_rgba(20,42,56,0.08)]">
+        <figure className="relative overflow-hidden border border-[#bfcbd3] bg-white">
           <div className="flex items-center justify-between border-b border-line px-5 py-4">
             <span className="section-label">Stabletrust dictionary</span>
             <span className="font-mono text-xs text-[#82909a]">01</span>

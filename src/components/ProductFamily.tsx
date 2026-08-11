@@ -96,7 +96,7 @@ const ProductFamily = () => {
             <article
               className={`relative flex min-h-72 flex-col border-b border-r p-6 sm:p-8 ${
                 product.featured
-                  ? "border-primary-blue bg-[#eef8fd]"
+                  ? "border-primary-blue bg-white"
                   : "border-line bg-white"
               }`}
               key={product.id}
@@ -107,7 +107,7 @@ const ProductFamily = () => {
                 </span>
                 <span
                   className={`text-xs font-semibold tracking-[0.12em] uppercase ${
-                    product.featured ? "text-[#2587ba]" : "text-muted"
+                    product.featured ? "text-primary-blue" : "text-muted"
                   }`}
                 >
                   {product.featured ? "You are here" : product.label}
@@ -125,7 +125,7 @@ const ProductFamily = () => {
                 </span>
               ) : product.href && product.linkLabel ? (
                 <a
-                  className="mt-auto pt-8 text-sm font-semibold text-[#237faa]"
+                  className="mt-auto pt-8 text-sm font-semibold text-primary-blue"
                   href={product.href}
                   rel="noopener noreferrer"
                   target="_blank"

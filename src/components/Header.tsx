@@ -11,11 +11,11 @@ const Header = () => {
         {/* APP LOGO */}
         <div className="flex gap-2 items-center">
           <img
-            className="h-6 sm:h-8"
+            className="h-6 sm:h-7"
             src="/stable-trust-logo.svg"
             alt="Stabletrust Pay"
           />
-          <span className="rounded border border-line px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
+          <span className="mt-[3px] rounded border border-line px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
             PAY
           </span>
         </div>
@@ -83,7 +83,7 @@ const Header = () => {
           isMobileNavbarOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-3 pointer-events-none"
-        } absolute left-4 right-4 top-[72px] border border-line bg-white duration-200 flex sm:hidden flex-col p-2 rounded-xl shadow-xl text-left`}
+        } absolute left-4 right-4 top-[72px] border border-line bg-white duration-200 flex sm:hidden flex-col p-2 rounded-xl text-left`}
       >
         <a
           className="header-nav-item px-3 py-2"

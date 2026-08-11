@@ -17,7 +17,7 @@ const Section01 = () => {
               Every Stablecoin. Every Chain.
             </span>
             <br />
-            <span className="italic text-[#298ec5]">All Confidential.</span>
+            <span className="italic text-primary-blue">All Confidential.</span>
           </h1>
           <p className="section-copy mt-7 max-w-[660px]">
             Stabletrust Pay is Fairblock's flagship app for confidential

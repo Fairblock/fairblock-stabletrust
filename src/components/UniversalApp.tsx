@@ -1,6 +1,6 @@
 const UniversalApp = () => {
   return (
-    <section className="border-b border-line bg-surface">
+    <section className="border-b border-line bg-white">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-28 lg:gap-20">
         <div>
           <p className="section-label mb-5">Flagship application</p>
@@ -26,7 +26,7 @@ const UniversalApp = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_20px_60px_rgba(20,42,56,0.08)]">
+        <div className="overflow-hidden border border-line bg-white">
           <div className="flex items-center justify-between border-b border-line px-5 py-4">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-primary-blue" />
@@ -38,22 +38,22 @@ const UniversalApp = () => {
           </div>
           <div className="p-6 sm:p-10">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div className="rounded-xl border border-line bg-surface p-5">
+              <div className="border border-line bg-white p-5">
                 <span className="text-xs font-semibold tracking-[0.12em] text-muted uppercase">
                   Stablecoin
                 </span>
                 <p className="mt-3 font-charter text-2xl">Choose any stablecoin</p>
               </div>
-              <div className="rounded-xl border border-line bg-surface p-5">
+              <div className="border border-line bg-white p-5">
                 <span className="text-xs font-semibold tracking-[0.12em] text-muted uppercase">
                   Network
                 </span>
                 <p className="mt-3 font-charter text-2xl">Choose any chain</p>
               </div>
             </div>
-            <div className="mt-3 flex min-h-24 items-center justify-between rounded-xl bg-ink p-5 text-white">
+            <div className="mt-3 flex min-h-24 items-center justify-between bg-ink p-5 text-white">
               <div>
-                <span className="text-xs tracking-[0.14em] text-[#9ed8f7] uppercase">
+                <span className="text-xs tracking-[0.14em] text-primary-blue uppercase">
                   Transfer mode
                 </span>
                 <p className="mt-2 font-charter text-2xl">Confidential</p>

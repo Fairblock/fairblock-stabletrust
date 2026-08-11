@@ -4,16 +4,16 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#edf3f6]">
+    <footer className="border-t border-line bg-white">
       <div className="wrapper grid gap-12 py-14 sm:grid-cols-[1fr_auto] sm:py-16">
         <div>
           <div className="flex items-center gap-2">
             <img
-              className="h-8"
+              className="h-6 sm:h-7"
               src="/stable-trust-logo.svg"
               alt="Stabletrust Pay"
             />
-            <span className="rounded border border-[#cbd6dd] px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
+            <span className="mt-[3px] rounded border border-[#cbd6dd] px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
               PAY
             </span>
           </div>
@@ -21,7 +21,7 @@ const Footer = () => {
             Fairblock's flagship app for confidential stablecoin transfers
             across chains.
           </p>
-          <div className="mt-6 flex gap-4 text-xl text-[#3f9fce]">
+          <div className="mt-6 flex gap-4 text-xl text-primary-blue">
           <a
             href="https://discord.com/invite/fairblock"
             rel="noopener noreferrer"
