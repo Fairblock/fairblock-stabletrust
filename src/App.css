@@ -2,7 +2,7 @@
   align-items: center;
   background-color: #0b0d10;
   border: 1px solid #0b0d10;
-  border-radius: 10px;
+  border-radius: 2px;
   color: white;
   cursor: pointer;
   display: inline-flex;
@@ -12,15 +12,16 @@
   justify-content: center;
   min-height: 44px;
   padding: 0.625rem 1.125rem;
+  box-shadow: inset 0 -3px 0 #58bdf6;
   transition: background-color 180ms ease, border-color 180ms ease,
-    transform 180ms ease;
+    color 180ms ease;
   width: fit-content;
 }
 
 .primary-button:hover {
-  background-color: #26313a;
-  border-color: #26313a;
-  transform: translateY(-1px);
+  background-color: #58bdf6;
+  border-color: #0b0d10;
+  color: #0b0d10;
 }
 
 .header-nav-item {
@@ -37,9 +38,9 @@
 
 .secondary-button {
   align-items: center;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid #c9d2d9;
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #0b0d10;
+  border-radius: 2px;
   color: #0b0d10;
   display: inline-flex;
   font-size: 0.9375rem;
@@ -47,12 +48,14 @@
   justify-content: center;
   min-height: 44px;
   padding: 0.625rem 1.125rem;
-  transition: background-color 180ms ease, border-color 180ms ease;
+  transition: background-color 180ms ease, border-color 180ms ease,
+    color 180ms ease;
 }
 
 .secondary-button:hover {
-  background: #f3f7fa;
-  border-color: #9eabb5;
+  background: #0b0d10;
+  border-color: #0b0d10;
+  color: #ffffff;
 }
 
 .wrapper {

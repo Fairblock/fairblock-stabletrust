@@ -25,14 +25,6 @@ const Header = () => {
           <div className="flex items-center gap-4 xl:gap-6 text-muted">
             <a
               className="header-nav-item"
-              href="https://app.stabletrust.io/how-it-works.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              How it works
-            </a>
-            <a
-              className="header-nav-item"
               href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
               rel="noopener noreferrer"
               target="_blank"
@@ -45,10 +37,7 @@ const Header = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Transparency Dashboard
-            </a>
-            <a className="header-nav-item" href="#compliance-architecture">
-              Compliance Architecture
+              Compliance
             </a>
           </div>
           <a
@@ -87,14 +76,6 @@ const Header = () => {
       >
         <a
           className="header-nav-item px-3 py-2"
-          href="https://app.stabletrust.io/how-it-works.html"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          How it works
-        </a>
-        <a
-          className="header-nav-item px-3 py-2"
           href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
           rel="noopener noreferrer"
           target="_blank"
@@ -107,14 +88,7 @@ const Header = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Transparency Dashboard
-        </a>
-        <a
-          className="header-nav-item px-3 py-2"
-          href="#compliance-architecture"
-          onClick={() => setIsMobileNavbarOpen(false)}
-        >
-          Compliance Architecture
+          Compliance
         </a>
         <a
           className="primary-button header-nav-item mt-2 w-full!"
