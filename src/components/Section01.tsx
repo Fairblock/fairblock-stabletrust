@@ -79,25 +79,19 @@ const ConfidentialVisual = () => (
     </defs>
 
     <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" filter="url(#secure-glow)" r="25" />
-    <path d="M48 16c26 0 43 9 57 17M48 54c26 0 43-9 57-17M212 16c-26 0-43 9-57 17M212 54c-26 0-43-9-57-17" stroke="url(#secure-link)" strokeDasharray="2 4" strokeLinecap="round" strokeWidth="1.4">
-      <animate attributeName="stroke-dashoffset" dur="8s" from="0" repeatCount="indefinite" to="-24" />
-    </path>
+    <path d="M45 15c28 1 46 10 61 19M45 55c28-1 46-10 61-19M215 15c-28 1-46 10-61 19M215 55c-28-1-46-10-61-19" stroke="url(#secure-link)" strokeLinecap="round" strokeOpacity=".62" strokeWidth=".8" />
 
-    <g fill="#fff" stroke="#0B0D10" strokeOpacity=".48" strokeWidth="1.5">
-      <circle cx="39" cy="15" r="9" />
-      <circle cx="39" cy="55" r="9" />
-      <circle cx="221" cy="15" r="9" />
-      <circle cx="221" cy="55" r="9" />
+    <g fill="#07131A" fillOpacity=".84">
+      <circle cx="39" cy="15" r="3.8" />
+      <circle cx="39" cy="55" r="3.8" />
+      <circle cx="221" cy="15" r="3.8" />
+      <circle cx="221" cy="55" r="3.8" />
     </g>
-    <g fill="#58BDF6">
-      <circle cx="36" cy="15" r="1.25" />
-      <circle cx="42" cy="15" r="1.25" />
-      <circle cx="36" cy="55" r="1.25" />
-      <circle cx="42" cy="55" r="1.25" />
-      <circle cx="218" cy="15" r="1.25" />
-      <circle cx="224" cy="15" r="1.25" />
-      <circle cx="218" cy="55" r="1.25" />
-      <circle cx="224" cy="55" r="1.25" />
+    <g fill="#58BDF6" fillOpacity=".9">
+      <circle cx="39" cy="15" r=".9" />
+      <circle cx="39" cy="55" r=".9" />
+      <circle cx="221" cy="15" r=".9" />
+      <circle cx="221" cy="55" r=".9" />
     </g>
 
     <g fill="#BCE9FF" filter="url(#secure-glow)">
@@ -125,9 +119,12 @@ const ConfidentialVisual = () => (
         <animate attributeName="fill-opacity" dur="5.2s" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values=".08;.18;.1;.15;.08;.08" />
       </circle>
 
-      <circle cx="130" cy="35" fill="url(#liquid-core)" r="16" stroke="#58BDF6" strokeOpacity=".58" strokeWidth=".9">
-        <animate attributeName="r" calcMode="spline" dur="5.2s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values="15.6;16.7;15.9;16.4;15.6;15.6" />
-      </circle>
+      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="#168BCF" fillOpacity=".2" filter="url(#secure-glow)">
+        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z;M129 19C138.8 17.9 146.4 25.1 146.8 34.8C147.1 44.9 139.6 51.9 130.1 51.6C120 51.4 113 45 113.5 35.4C114 25.5 119.5 20.1 129 19Z;M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" />
+      </path>
+      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="url(#liquid-core)">
+        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z;M129 19C138.8 17.9 146.4 25.1 146.8 34.8C147.1 44.9 139.6 51.9 130.1 51.6C120 51.4 113 45 113.5 35.4C114 25.5 119.5 20.1 129 19Z;M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" />
+      </path>
       <g clipPath="url(#liquid-clip)" filter="url(#plasma-distort)">
         <path d="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" fill="url(#liquid-ribbon)" fillOpacity=".58">
           <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z;M113 31C121 19 135 20 145 29C151 35 145 46 133 50C121 52 109 43 113 31Z;M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" />
@@ -135,16 +132,15 @@ const ConfidentialVisual = () => (
         <path d="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" fill="#168BCF" fillOpacity=".28">
           <animate attributeName="d" dur="8.5s" repeatCount="indefinite" values="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z;M112 39C123 31 137 30 148 36C141 47 127 51 115 47C112 45 111 42 112 39Z;M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" />
         </path>
-        <ellipse cx="124" cy="29" fill="#AEEAFF" fillOpacity=".34" rx="5" ry="2.1">
+        <ellipse cx="124" cy="29" fill="#AEEAFF" fillOpacity=".22" rx="4.5" ry="1.5">
           <animate attributeName="cx" dur="6.5s" repeatCount="indefinite" values="122;128;122" />
-          <animate attributeName="fill-opacity" dur="6.5s" repeatCount="indefinite" values=".22;.46;.22" />
+          <animate attributeName="fill-opacity" dur="6.5s" repeatCount="indefinite" values=".12;.3;.12" />
         </ellipse>
         <path d="M116 39C123 34 136 33 144 28" stroke="#7AD5FF" strokeOpacity=".45" strokeWidth=".7">
           <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M116 39C123 34 136 33 144 28;M116 34C125 29 138 34 144 41;M116 39C123 34 136 33 144 28" />
           <animate attributeName="stroke-opacity" dur="8s" repeatCount="indefinite" values=".2;.62;.2" />
         </path>
       </g>
-      <circle cx="130" cy="35" fill="none" r="16.2" stroke="#7AD5FF" strokeOpacity=".42" strokeWidth=".65" />
     </g>
   </svg>
 );
