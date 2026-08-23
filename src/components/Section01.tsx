@@ -53,13 +53,18 @@ const ConfidentialVisual = () => (
         <stop offset=".5" stopColor="#58BDF6" stopOpacity=".9" />
         <stop offset="1" stopColor="#0B0D10" stopOpacity=".2" />
       </linearGradient>
+      <radialGradient id="cipher-core" cx="0" cy="0" r="1" gradientTransform="translate(126 30) rotate(46) scale(24)">
+        <stop stopColor="#E8F7FF" />
+        <stop offset=".48" stopColor="#58BDF6" />
+        <stop offset="1" stopColor="#168BCF" />
+      </radialGradient>
       <filter id="secure-glow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur stdDeviation="4" />
       </filter>
     </defs>
 
-    <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".22" filter="url(#secure-glow)" r="24" />
-    <path d="M51 18 112 31M51 52l61-13M209 18l-61 13M209 52l-61-13" stroke="url(#secure-link)" strokeDasharray="3 4" strokeLinecap="round" strokeWidth="1.5" />
+    <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" filter="url(#secure-glow)" r="25" />
+    <path d="M48 16c26 0 43 9 57 17M48 54c26 0 43-9 57-17M212 16c-26 0-43 9-57 17M212 54c-26 0-43-9-57-17" stroke="url(#secure-link)" strokeDasharray="2 4" strokeLinecap="round" strokeWidth="1.4" />
 
     <g fill="#fff" stroke="#0B0D10" strokeOpacity=".48" strokeWidth="1.5">
       <circle cx="39" cy="15" r="9" />
@@ -67,24 +72,55 @@ const ConfidentialVisual = () => (
       <circle cx="221" cy="15" r="9" />
       <circle cx="221" cy="55" r="9" />
     </g>
-
-    <g fill="#58BDF6" stroke="#fff" strokeWidth="2">
-      <circle cx="130" cy="35" r="17" />
-    </g>
-    <path d="M123.5 33v-3.1a6.5 6.5 0 0 1 13 0V33m-15 0h17v12h-17z" stroke="#0B0D10" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-    <circle cx="130" cy="38.5" fill="#0B0D10" r="1.7" />
-
-    <g fill="#fff" stroke="#58BDF6" strokeOpacity=".55">
-      <rect height="13" rx="6.5" width="34" x="69" y="13" />
-      <rect height="13" rx="6.5" width="34" x="157" y="44" />
-    </g>
     <g fill="#58BDF6">
-      <circle cx="81" cy="19.5" r="1.5" />
-      <circle cx="86" cy="19.5" r="1.5" />
-      <circle cx="91" cy="19.5" r="1.5" />
-      <circle cx="169" cy="50.5" r="1.5" />
-      <circle cx="174" cy="50.5" r="1.5" />
-      <circle cx="179" cy="50.5" r="1.5" />
+      <circle cx="36" cy="15" r="1.25" />
+      <circle cx="42" cy="15" r="1.25" />
+      <circle cx="36" cy="55" r="1.25" />
+      <circle cx="42" cy="55" r="1.25" />
+      <circle cx="218" cy="15" r="1.25" />
+      <circle cx="224" cy="15" r="1.25" />
+      <circle cx="218" cy="55" r="1.25" />
+      <circle cx="224" cy="55" r="1.25" />
+    </g>
+
+    <g opacity=".85">
+      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="2 3" />
+      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="1 5" transform="rotate(62 130 35)" />
+    </g>
+
+    <g>
+      <g fill="#fff" stroke="#58BDF6" strokeOpacity=".65">
+        <rect height="9" rx="4.5" width="25" x="92" y="21" />
+        <rect height="9" rx="4.5" width="25" x="143" y="12" />
+        <rect height="9" rx="4.5" width="25" x="148" y="43" />
+        <rect height="9" rx="4.5" width="25" x="99" y="51" />
+      </g>
+      <g fill="#168BCF" fontFamily="monospace" fontSize="5.5" fontWeight="700" letterSpacing=".45">
+        <text x="98" y="27.4">7F3A</text>
+        <text x="149" y="18.4">C91E</text>
+        <text x="154" y="49.4">A2D8</text>
+        <text x="105" y="57.4">9B4C</text>
+      </g>
+      <animateTransform attributeName="transform" dur="16s" from="0 130 35" repeatCount="indefinite" to="360 130 35" type="rotate" />
+    </g>
+
+    <g>
+      <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" r="19">
+        <animate attributeName="r" dur="3.6s" repeatCount="indefinite" values="18;22;18" />
+        <animate attributeName="fill-opacity" dur="3.6s" repeatCount="indefinite" values=".22;.04;.22" />
+      </circle>
+      <path d="m130 21 12 7v14l-12 7-12-7V28z" fill="url(#cipher-core)" stroke="#fff" strokeWidth="1.5" />
+      <g fill="#0B0D10">
+        <circle cx="125" cy="31" r="1.2" />
+        <circle cx="130" cy="31" r="1.2" />
+        <circle cx="135" cy="31" r="1.2" />
+        <circle cx="125" cy="35" r="1.2" />
+        <circle cx="130" cy="35" r="1.2" />
+        <circle cx="135" cy="35" r="1.2" />
+        <circle cx="125" cy="39" r="1.2" />
+        <circle cx="130" cy="39" r="1.2" />
+        <circle cx="135" cy="39" r="1.2" />
+      </g>
     </g>
   </svg>
 );
