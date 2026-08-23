@@ -31,7 +31,7 @@ const CARD_DETAILS = [
 
 const Card = ({ id, imgUrl, title, content }: CardProps) => {
   return (
-    <article className="editorial-card flex flex-col border border-line bg-white p-6 sm:p-7">
+    <article className="flex flex-col border border-line bg-white p-6 sm:p-7">
       <div className="flex items-center justify-between border-b border-line pb-4">
         <span className="font-mono text-xs tracking-[0.14em] text-muted">{id}</span>
         <span className="h-2 w-2 rounded-full bg-primary-blue" />
@@ -42,7 +42,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
           src={imgUrl}
           alt={title}
         />
-        <h3 className="font-sf-pro-display text-2xl font-medium tracking-[-0.035em]">
+        <h3 className="font-charter text-2xl tracking-[-0.02em]">
           {title}
         </h3>
         <p className="mt-3 leading-6 text-muted">{content}</p>
@@ -53,7 +53,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
 
 const Section03 = () => {
   return (
-    <section className="border-b border-line bg-[#f8f5ee]">
+    <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
         <h2 className="section-title">Protect What Matters</h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
