@@ -30,9 +30,6 @@ const ComplianceArchitecture = () => {
       <div className="wrapper py-20 sm:py-28">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div>
-            <p className="section-label mb-5 text-primary-blue!">
-              Compliance architecture
-            </p>
             <h2 className="font-charter text-4xl leading-[1.02] tracking-[-0.035em] sm:text-6xl">
               Confidential by design. Compliant by architecture.
             </h2>

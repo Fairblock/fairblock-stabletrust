@@ -56,7 +56,6 @@ const Section05 = () => {
   return (
     <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
-        <p className="section-label mb-5">Product principles</p>
         <h2 className="section-title">Why Stabletrust Pay</h2>
         <p className="section-copy mt-6">
           Confidentiality designed for production environments, not isolated

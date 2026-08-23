@@ -55,7 +55,6 @@ const Section03 = () => {
   return (
     <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
-        <p className="section-label mb-5">Who it protects</p>
         <h2 className="section-title">Protect What Matters</h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {CARD_DETAILS.map((card) => {

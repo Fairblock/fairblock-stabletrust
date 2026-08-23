@@ -3,7 +3,6 @@ const UniversalApp = () => {
     <section className="border-b border-line bg-white">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-28 lg:gap-20">
         <div>
-          <p className="section-label mb-5">Flagship application</p>
           <h2 className="section-title max-w-[620px]">
             The universal app for confidential stablecoin transfers.
           </h2>
@@ -27,15 +26,6 @@ const UniversalApp = () => {
         </div>
 
         <div className="overflow-hidden border border-line bg-white">
-          <div className="flex items-center justify-between border-b border-line px-5 py-4">
-            <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-primary-blue" />
-              <span className="text-xs font-semibold tracking-[0.14em] text-muted uppercase">
-                Stabletrust Pay
-              </span>
-            </div>
-            <span className="font-mono text-xs text-[#82909a]">FLAGSHIP APP</span>
-          </div>
           <div className="p-6 sm:p-10">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div className="border border-line bg-white p-5">
