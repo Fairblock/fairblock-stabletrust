@@ -7,14 +7,14 @@ const Footer = () => {
     <footer className="border-t border-line bg-white">
       <div className="wrapper grid gap-12 py-14 sm:grid-cols-[1fr_auto] sm:py-16">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <img
               className="h-6 sm:h-7"
               src="/stable-trust-logo.svg"
               alt="Stabletrust Pay"
             />
-            <span className="mt-[3px] rounded border border-[#cbd6dd] px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
-              PAY
+            <span className="font-charter text-base leading-none tracking-[-0.03em] text-ink sm:text-lg">
+              Pay
             </span>
           </div>
           <p className="mt-5 max-w-sm leading-6 text-muted">

@@ -9,14 +9,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b border-line bg-white/92 backdrop-blur-md">
       <div className="wrapper flex-row! items-center justify-between py-4">
         {/* APP LOGO */}
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-1.5">
           <img
             className="h-6 sm:h-7"
             src="/stable-trust-logo.svg"
             alt="Stabletrust Pay"
           />
-          <span className="mt-[3px] rounded border border-line px-1.5 py-1 text-[0.625rem] font-semibold tracking-[0.12em] text-muted">
-            PAY
+          <span className="font-charter text-base leading-none tracking-[-0.03em] text-ink sm:text-lg">
+            Pay
           </span>
         </div>
 
