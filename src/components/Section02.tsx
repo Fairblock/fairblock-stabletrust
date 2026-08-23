@@ -1,6 +1,6 @@
 const Section02 = () => {
   return (
-    <section className="border-b border-line bg-white">
+    <section className="border-b border-line bg-[#f1eee7]">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[1.05fr_0.95fr] md:py-28 lg:gap-20">
         <div>
           <h2 className="section-title">Stop the Leak</h2>
@@ -17,7 +17,7 @@ const Section02 = () => {
           </div>
         </div>
 
-        <figure className="relative overflow-hidden border border-[#bfcbd3] bg-white">
+        <figure className="relative overflow-hidden border border-ink/25 bg-white">
           <div className="p-6 sm:p-9">
             <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
               <h3 className="font-charter text-4xl tracking-[-0.03em] sm:text-5xl">

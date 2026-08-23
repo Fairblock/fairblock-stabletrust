@@ -73,7 +73,7 @@ const PRODUCTS: Product[] = [
 
 const ProductFamily = () => {
   return (
-    <section className="border-b border-line bg-white">
+    <section className="border-b border-line bg-[#f8f5ee]">
       <div className="wrapper py-20 sm:py-28">
         <div className="max-w-3xl">
           <p className="section-label mb-5">Stabletrust product family</p>
@@ -94,7 +94,7 @@ const ProductFamily = () => {
         <div className="mt-12 grid border-l border-t border-line md:grid-cols-2">
           {PRODUCTS.map((product) => (
             <article
-              className={`relative flex min-h-72 flex-col border-b border-r p-6 sm:p-8 ${
+              className={`editorial-card relative flex min-h-72 flex-col border-b border-r p-6 sm:p-8 ${
                 product.featured
                   ? "border-primary-blue bg-white"
                   : "border-line bg-white"

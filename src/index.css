@@ -83,10 +83,10 @@
 
 @theme {
   --color-primary-blue: #58bdf6;
-  --color-ink: #0b0d10;
-  --color-muted: #5d6670;
-  --color-surface: #f3f7fa;
-  --color-line: #dce3e8;
+  --color-ink: #151918;
+  --color-muted: #59625f;
+  --color-surface: #f1eee7;
+  --color-line: #cbd1cd;
   --font-charter: "charter", serif;
   --font-sf-pro-display: "sf-pro-display", sans-serif;
 }
@@ -97,9 +97,10 @@
   }
 
   body {
-    background: #ffffff;
-    color: #0b0d10;
+    background: #f8f5ee;
+    color: #151918;
     font-family: "sf-pro-display", sans-serif;
+    font-synthesis: none;
     margin: 0;
     text-rendering: optimizeLegibility;
   }

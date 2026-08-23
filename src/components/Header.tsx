@@ -6,7 +6,7 @@ const Header = () => {
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/92 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-ink/20 bg-[#f8f5ee]/95 backdrop-blur-md">
       <div className="wrapper flex-row! items-center justify-between py-4">
         {/* APP LOGO */}
         <div className="flex gap-2 items-center">
@@ -83,7 +83,7 @@ const Header = () => {
           isMobileNavbarOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-3 pointer-events-none"
-        } absolute left-4 right-4 top-[72px] border border-line bg-white duration-200 flex sm:hidden flex-col p-2 rounded-xl text-left`}
+        } absolute left-4 right-4 top-[72px] border border-ink/20 bg-[#f8f5ee] duration-200 flex sm:hidden flex-col p-2 rounded-[2px] text-left`}
       >
         <a
           className="header-nav-item px-3 py-2"

@@ -39,7 +39,7 @@ const STEPS = [
 
 const Section04 = () => {
   return (
-    <section className="border-b border-line bg-white">
+    <section className="border-b border-line bg-[#eef6f6]">
       <div className="wrapper py-20 sm:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -58,7 +58,7 @@ const Section04 = () => {
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((step, index) => (
             <article
-              className="group overflow-hidden border border-line bg-white transition-transform duration-200 hover:-translate-y-1"
+              className="editorial-card group overflow-hidden border border-line bg-white"
               key={step.title}
             >
               <div className="flex h-36 items-center justify-center overflow-hidden border-b border-line bg-white">

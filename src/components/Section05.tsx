@@ -38,7 +38,7 @@ const CARD_DETAILS = [
 
 const Card = ({ imgUrl, title, content }: CardProps) => {
   return (
-    <article className="overflow-hidden border border-line bg-white">
+    <article className="editorial-card overflow-hidden border border-line bg-white">
       <div className="h-52 overflow-hidden border-b border-line bg-white">
         <img className="h-full w-full object-cover" src={imgUrl} alt="" />
       </div>
@@ -54,7 +54,7 @@ const Card = ({ imgUrl, title, content }: CardProps) => {
 
 const Section05 = () => {
   return (
-    <section className="border-b border-line bg-white">
+    <section className="border-b border-line bg-[#f8f5ee]">
       <div className="wrapper py-20 sm:py-28">
         <h2 className="section-title">Why Stabletrust Pay</h2>
         <p className="section-copy mt-6">

@@ -1,6 +1,6 @@
 const UniversalApp = () => {
   return (
-    <section className="border-b border-line bg-white">
+    <section className="border-b border-line bg-[#eef6f6]">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-28 lg:gap-20">
         <div>
           <h2 className="section-title max-w-[620px]">
@@ -25,7 +25,7 @@ const UniversalApp = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden border border-line bg-white">
+        <div className="overflow-hidden border border-ink/25 bg-white">
           <div className="p-6 sm:p-10">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div className="border border-line bg-white p-5">
