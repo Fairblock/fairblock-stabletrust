@@ -17,9 +17,9 @@ const Section01 = () => {
             <span className="italic text-primary-blue">All Confidential.</span>
           </h1>
           <p className="section-copy mt-7 max-w-[660px]">
-            Stabletrust Pay is Fairblock's flagship app for confidential
-            stablecoin transfers across chains. Use one application for every
-            stablecoin, on every chain, while keeping amounts, balances, and
+            Stabletrust Pay is Fairblock's flagship application for
+            confidential stablecoin transfers across chains. Use any
+            stablecoin on any chain while keeping amounts, balances, and
             business relationships private.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
