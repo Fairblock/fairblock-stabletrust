@@ -53,11 +53,18 @@ const ConfidentialVisual = () => (
         <stop offset=".5" stopColor="#58BDF6" stopOpacity=".9" />
         <stop offset="1" stopColor="#0B0D10" stopOpacity=".2" />
       </linearGradient>
-      <radialGradient id="cipher-core" cx="0" cy="0" r="1" gradientTransform="translate(126 30) rotate(46) scale(24)">
-        <stop stopColor="#E8F7FF" />
-        <stop offset=".48" stopColor="#58BDF6" />
-        <stop offset="1" stopColor="#168BCF" />
+      <radialGradient id="orbital-core" cx="0" cy="0" r="1" gradientTransform="translate(126 30) rotate(48) scale(19)">
+        <stop stopColor="#FFFFFF" />
+        <stop offset=".25" stopColor="#DDF5FF" />
+        <stop offset=".6" stopColor="#58BDF6" />
+        <stop offset="1" stopColor="#0877BC" />
       </radialGradient>
+      <linearGradient id="orbit-shimmer" x1="106" x2="154" y1="27" y2="43" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#58BDF6" stopOpacity=".08" />
+        <stop offset=".36" stopColor="#FFFFFF" stopOpacity=".96" />
+        <stop offset=".62" stopColor="#58BDF6" stopOpacity=".9" />
+        <stop offset="1" stopColor="#168BCF" stopOpacity=".12" />
+      </linearGradient>
       <filter id="secure-glow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur stdDeviation="4" />
       </filter>
@@ -130,23 +137,40 @@ const ConfidentialVisual = () => (
     </g>
 
     <g>
-      <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" r="19">
-        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="18;21;18.6;20;18;18" />
+      <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" r="23">
+        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="22;25;22.6;24;22;22" />
         <animate attributeName="fill-opacity" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values=".16;.3;.18;.26;.16;.16" />
       </circle>
-      <path d="m130 21 12 7v14l-12 7-12-7V28z" fill="url(#cipher-core)" stroke="#fff" strokeWidth="1.5">
-        <animate attributeName="stroke-opacity" dur="4.8s" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values=".82;1;.86;1;.82;.82" />
-      </path>
-      <g fill="#0B0D10">
-        <circle cx="125" cy="31" r="1.2" />
-        <circle cx="130" cy="31" r="1.2" />
-        <circle cx="135" cy="31" r="1.2" />
-        <circle cx="125" cy="35" r="1.2" />
-        <circle cx="130" cy="35" r="1.2" />
-        <circle cx="135" cy="35" r="1.2" />
-        <circle cx="125" cy="39" r="1.2" />
-        <circle cx="130" cy="39" r="1.2" />
-        <circle cx="135" cy="39" r="1.2" />
+
+      <g opacity=".9" stroke="url(#orbit-shimmer)" strokeLinecap="round">
+        <ellipse cx="130" cy="35" rx="30" ry="10" strokeDasharray="3 2.5" strokeWidth="1.35" transform="rotate(-14 130 35)">
+          <animate attributeName="stroke-dashoffset" dur="8.5s" from="0" repeatCount="indefinite" to="-22" />
+        </ellipse>
+        <ellipse cx="130" cy="35" rx="27" ry="8.5" strokeDasharray="1 3" strokeWidth="1.1" transform="rotate(58 130 35)">
+          <animate attributeName="stroke-dashoffset" dur="10s" from="0" repeatCount="indefinite" to="18" />
+        </ellipse>
+      </g>
+
+      <circle cx="130" cy="35" fill="url(#orbital-core)" r="14.5" stroke="#FFFFFF" strokeOpacity=".9" strokeWidth="1.35">
+        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="14.2;15.4;14.5;15;14.2;14.2" />
+      </circle>
+      <ellipse cx="125.5" cy="30.5" fill="#FFFFFF" fillOpacity=".72" rx="5.2" ry="2.8" transform="rotate(-24 125.5 30.5)" />
+      <circle cx="130" cy="35" fill="none" r="9.4" stroke="#E8F7FF" strokeDasharray="1 2.5" strokeOpacity=".75">
+        <animate attributeName="stroke-dashoffset" dur="7s" from="0" repeatCount="indefinite" to="-14" />
+      </circle>
+
+      <g fill="#FFFFFF" stroke="#58BDF6" strokeWidth=".6">
+        <circle r="1.8">
+          <animateMotion dur="8.5s" path="M107 40c8 10 38 8 46-5s-21-13-42-5-11 19 9 22 37-12 21-23-17-14-34-4-8 22 12 26" repeatCount="indefinite" />
+        </circle>
+        <circle fill="#A9E3FF" r="1.45">
+          <animateMotion begin="-4.2s" dur="8.5s" path="M107 40c8 10 38 8 46-5s-21-13-42-5-11 19 9 22 37-12 21-23-17-14-34-4-8 22 12 26" repeatCount="indefinite" />
+        </circle>
+      </g>
+
+      <g stroke="#FFFFFF" strokeLinecap="round" strokeWidth=".8">
+        <path d="M109 23v5M106.5 25.5h5" />
+        <path d="M151 44v4M149 46h4" />
       </g>
     </g>
   </svg>
