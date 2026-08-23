@@ -53,18 +53,20 @@ const ConfidentialVisual = () => (
         <stop offset=".5" stopColor="#58BDF6" stopOpacity=".9" />
         <stop offset="1" stopColor="#0B0D10" stopOpacity=".2" />
       </linearGradient>
-      <radialGradient id="orbital-core" cx="0" cy="0" r="1" gradientTransform="translate(126 30) rotate(48) scale(19)">
+      <radialGradient id="liquid-core" cx="0" cy="0" r="1" gradientTransform="translate(124 29) rotate(48) scale(25)">
         <stop stopColor="#FFFFFF" />
-        <stop offset=".25" stopColor="#DDF5FF" />
-        <stop offset=".6" stopColor="#58BDF6" />
-        <stop offset="1" stopColor="#0877BC" />
+        <stop offset=".22" stopColor="#E6F8FF" />
+        <stop offset=".58" stopColor="#72CCFA" />
+        <stop offset="1" stopColor="#1389CC" />
       </radialGradient>
-      <linearGradient id="orbit-shimmer" x1="106" x2="154" y1="27" y2="43" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#58BDF6" stopOpacity=".08" />
-        <stop offset=".36" stopColor="#FFFFFF" stopOpacity=".96" />
-        <stop offset=".62" stopColor="#58BDF6" stopOpacity=".9" />
-        <stop offset="1" stopColor="#168BCF" stopOpacity=".12" />
+      <linearGradient id="liquid-ribbon" x1="113" x2="148" y1="25" y2="47" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#FFFFFF" stopOpacity=".92" />
+        <stop offset=".42" stopColor="#BFEAFF" stopOpacity=".5" />
+        <stop offset="1" stopColor="#2BA9EC" stopOpacity=".85" />
       </linearGradient>
+      <clipPath id="liquid-clip">
+        <circle cx="130" cy="35" r="16" />
+      </clipPath>
       <filter id="secure-glow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur stdDeviation="4" />
       </filter>
@@ -92,31 +94,6 @@ const ConfidentialVisual = () => (
       <circle cx="224" cy="55" r="1.25" />
     </g>
 
-    <g opacity=".85">
-      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="2 3">
-        <animate attributeName="stroke-dashoffset" dur="10s" from="0" repeatCount="indefinite" to="-20" />
-      </ellipse>
-      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="1 5" transform="rotate(62 130 35)">
-        <animate attributeName="stroke-dashoffset" dur="12s" from="0" repeatCount="indefinite" to="24" />
-      </ellipse>
-    </g>
-
-    <g opacity=".92">
-      <g fill="#fff" stroke="#58BDF6" strokeOpacity=".65">
-        <rect height="9" rx="4.5" width="25" x="92" y="21" />
-        <rect height="9" rx="4.5" width="25" x="143" y="12" />
-        <rect height="9" rx="4.5" width="25" x="148" y="43" />
-        <rect height="9" rx="4.5" width="25" x="99" y="51" />
-      </g>
-      <g fill="#168BCF" fontFamily="monospace" fontSize="5.5" fontWeight="700" letterSpacing=".45">
-        <text x="98" y="27.4">7F3A</text>
-        <text x="149" y="18.4">C91E</text>
-        <text x="154" y="49.4">A2D8</text>
-        <text x="105" y="57.4">9B4C</text>
-      </g>
-      <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values=".76;.96;.84;.92;.76" />
-    </g>
-
     <g fill="#BCE9FF" filter="url(#secure-glow)">
       <circle r="1.4">
         <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
@@ -137,41 +114,27 @@ const ConfidentialVisual = () => (
     </g>
 
     <g>
-      <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" r="23">
-        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="22;25;22.6;24;22;22" />
-        <animate attributeName="fill-opacity" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values=".16;.3;.18;.26;.16;.16" />
+      <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".18" r="23">
+        <animate attributeName="r" calcMode="spline" dur="5.2s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values="21;24;21.7;23;21;21" />
+        <animate attributeName="fill-opacity" dur="5.2s" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values=".12;.25;.15;.21;.12;.12" />
       </circle>
 
-      <g opacity=".9" stroke="url(#orbit-shimmer)" strokeLinecap="round">
-        <ellipse cx="130" cy="35" rx="30" ry="10" strokeDasharray="3 2.5" strokeWidth="1.35" transform="rotate(-14 130 35)">
-          <animate attributeName="stroke-dashoffset" dur="8.5s" from="0" repeatCount="indefinite" to="-22" />
+      <circle cx="130" cy="35" fill="url(#liquid-core)" r="16" stroke="#FFFFFF" strokeOpacity=".82" strokeWidth="1.2">
+        <animate attributeName="r" calcMode="spline" dur="5.2s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values="15.6;16.7;15.9;16.4;15.6;15.6" />
+      </circle>
+      <g clipPath="url(#liquid-clip)">
+        <path d="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" fill="url(#liquid-ribbon)" fillOpacity=".72">
+          <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z;M113 31C121 19 135 20 145 29C151 35 145 46 133 50C121 52 109 43 113 31Z;M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" />
+        </path>
+        <path d="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" fill="#FFFFFF" fillOpacity=".38">
+          <animate attributeName="d" dur="8.5s" repeatCount="indefinite" values="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z;M112 39C123 31 137 30 148 36C141 47 127 51 115 47C112 45 111 42 112 39Z;M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" />
+        </path>
+        <ellipse cx="124" cy="29" fill="#FFFFFF" fillOpacity=".62" rx="6" ry="3.2">
+          <animate attributeName="cx" dur="6.5s" repeatCount="indefinite" values="122;128;122" />
+          <animate attributeName="fill-opacity" dur="6.5s" repeatCount="indefinite" values=".5;.78;.5" />
         </ellipse>
-        <ellipse cx="130" cy="35" rx="27" ry="8.5" strokeDasharray="1 3" strokeWidth="1.1" transform="rotate(58 130 35)">
-          <animate attributeName="stroke-dashoffset" dur="10s" from="0" repeatCount="indefinite" to="18" />
-        </ellipse>
       </g>
-
-      <circle cx="130" cy="35" fill="url(#orbital-core)" r="14.5" stroke="#FFFFFF" strokeOpacity=".9" strokeWidth="1.35">
-        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="14.2;15.4;14.5;15;14.2;14.2" />
-      </circle>
-      <ellipse cx="125.5" cy="30.5" fill="#FFFFFF" fillOpacity=".72" rx="5.2" ry="2.8" transform="rotate(-24 125.5 30.5)" />
-      <circle cx="130" cy="35" fill="none" r="9.4" stroke="#E8F7FF" strokeDasharray="1 2.5" strokeOpacity=".75">
-        <animate attributeName="stroke-dashoffset" dur="7s" from="0" repeatCount="indefinite" to="-14" />
-      </circle>
-
-      <g fill="#FFFFFF" stroke="#58BDF6" strokeWidth=".6">
-        <circle r="1.8">
-          <animateMotion dur="8.5s" path="M107 40c8 10 38 8 46-5s-21-13-42-5-11 19 9 22 37-12 21-23-17-14-34-4-8 22 12 26" repeatCount="indefinite" />
-        </circle>
-        <circle fill="#A9E3FF" r="1.45">
-          <animateMotion begin="-4.2s" dur="8.5s" path="M107 40c8 10 38 8 46-5s-21-13-42-5-11 19 9 22 37-12 21-23-17-14-34-4-8 22 12 26" repeatCount="indefinite" />
-        </circle>
-      </g>
-
-      <g stroke="#FFFFFF" strokeLinecap="round" strokeWidth=".8">
-        <path d="M109 23v5M106.5 25.5h5" />
-        <path d="M151 44v4M149 46h4" />
-      </g>
+      <circle cx="130" cy="35" fill="none" r="16.2" stroke="#DDF5FF" strokeOpacity=".7" strokeWidth=".75" />
     </g>
   </svg>
 );
