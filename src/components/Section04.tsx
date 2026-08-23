@@ -8,13 +8,13 @@ const STEPS = [
   {
     title: "Treasury",
     description:
-      "Move funds between OTC desks, DAOs, and institutions without signalling liquidity strategy or cash runway.",
+      "Enable enterprises, institutions, and funds to manage treasury operations without exposing balances, transfers, or financial strategy.",
     image: "/s04-trading.svg",
   },
   {
     title: "Trading",
     description:
-      "Build, balance, and settle positions without telling the market what you’re doing.",
+      "Execute swaps, RFQs, and OTC trades without leaking trade size, direction, or execution strategy.",
     image: "/s04-treasury.svg",
   },
   {
