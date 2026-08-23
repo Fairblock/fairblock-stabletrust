@@ -113,7 +113,7 @@ const ProductFamily = () => {
                   {product.featured ? "You are here" : product.label}
                 </span>
               </div>
-              <h3 className="mt-10 font-charter text-3xl tracking-[-0.02em]">
+              <h3 className="mt-10 font-sf-pro-display text-3xl font-medium tracking-[-0.04em]">
                 {product.name}
               </h3>
               <p className="mt-4 max-w-xl leading-6 text-muted">

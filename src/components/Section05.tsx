@@ -43,7 +43,7 @@ const Card = ({ imgUrl, title, content }: CardProps) => {
         <img className="h-full w-full object-cover" src={imgUrl} alt="" />
       </div>
       <div className="p-6 sm:p-7">
-        <h3 className="font-charter text-2xl leading-tight tracking-[-0.02em]">
+        <h3 className="font-sf-pro-display text-2xl font-medium leading-tight tracking-[-0.035em]">
           {title}
         </h3>
         <p className="mt-3 leading-6 text-muted">{content}</p>

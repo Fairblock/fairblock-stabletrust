@@ -1,6 +1,6 @@
 const UniversalApp = () => {
   return (
-    <section className="border-b border-line bg-[#eef6f6]">
+    <section className="technical-field border-b border-line">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-28 lg:gap-20">
         <div>
           <h2 className="section-title max-w-[620px]">
@@ -11,11 +11,11 @@ const UniversalApp = () => {
             confidentially across chains. Choose the stablecoin, choose the
             network, and complete the transfer from one consistent experience.
           </p>
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="feature-list mt-8">
             {["Every stablecoin", "Every chain", "Confidential transfers"].map(
               (attribute) => (
                 <span
-                  className="rounded-full border border-[#c9d6de] bg-white px-3 py-1.5 text-sm text-[#35434d]"
+                  className="feature-list-item"
                   key={attribute}
                 >
                   {attribute}

@@ -42,7 +42,7 @@ const Card = ({ id, imgUrl, title, content }: CardProps) => {
           src={imgUrl}
           alt={title}
         />
-        <h3 className="font-charter text-2xl tracking-[-0.02em]">
+        <h3 className="font-sf-pro-display text-2xl font-medium tracking-[-0.035em]">
           {title}
         </h3>
         <p className="mt-3 leading-6 text-muted">{content}</p>
