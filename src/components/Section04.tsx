@@ -43,7 +43,6 @@ const Section04 = () => {
       <div className="wrapper py-20 sm:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="section-label mb-5">Institutional use cases</p>
             <h2 className="section-title">Built for Real Business</h2>
           </div>
           <a

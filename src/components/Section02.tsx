@@ -3,7 +3,6 @@ const Section02 = () => {
     <section className="border-b border-line bg-white">
       <div className="wrapper grid gap-12 py-20 md:grid-cols-[1.05fr_0.95fr] md:py-28 lg:gap-20">
         <div>
-          <p className="section-label mb-5">The problem</p>
           <h2 className="section-title">Stop the Leak</h2>
           <div className="section-copy mt-6 flex flex-col gap-5">
             <p>
@@ -19,10 +18,6 @@ const Section02 = () => {
         </div>
 
         <figure className="relative overflow-hidden border border-[#bfcbd3] bg-white">
-          <div className="flex items-center justify-between border-b border-line px-5 py-4">
-            <span className="section-label">Stabletrust dictionary</span>
-            <span className="font-mono text-xs text-[#82909a]">01</span>
-          </div>
           <div className="p-6 sm:p-9">
             <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
               <h3 className="font-charter text-4xl tracking-[-0.03em] sm:text-5xl">

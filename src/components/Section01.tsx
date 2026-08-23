@@ -7,9 +7,6 @@ const Section01 = () => {
       <BackgroundVideo />
       <div className="wrapper relative z-10 min-h-[640px] justify-center py-20 sm:min-h-[700px] sm:py-28">
         <div className="max-w-[980px]">
-          <p className="section-label mb-6">
-            Stabletrust Pay
-          </p>
           <h1 className="font-charter text-[2.65rem] leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-[4rem]">
             One Universal App.
             <br />
