@@ -56,6 +56,11 @@ const Section03 = () => {
     <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
         <h2 className="section-title">Protect What Matters</h2>
+        <p className="mt-5 max-w-3xl text-base leading-7 text-muted sm:text-lg">
+          Moving money onchain means leaking sensitive financial information.
+          Anyone can see how much you paid, who you paid, when you paid, and how
+          much you still hold.
+        </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {CARD_DETAILS.map((card) => {
           return (

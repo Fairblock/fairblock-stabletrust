@@ -56,11 +56,7 @@ const Section01 = () => {
                 aria-hidden="true"
                 className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary-blue/20 blur-2xl transition-transform duration-500 group-hover:scale-125"
               />
-              <div className="relative flex items-center gap-2.5">
-                <span
-                  aria-hidden="true"
-                  className="h-2 w-2 rounded-full bg-primary-blue shadow-[0_0_0_4px_rgba(88,189,246,0.14)]"
-                />
+              <div className="relative">
                 <p className="text-sm font-semibold tracking-[-0.01em]">
                   {title}
                 </p>

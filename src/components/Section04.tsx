@@ -41,19 +41,7 @@ const Section04 = () => {
   return (
     <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
-        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <div>
-            <h2 className="section-title">Built for Real Business</h2>
-          </div>
-          <a
-            className="secondary-button"
-            href="https://docs.fairblock.network/ct/guides/apps/stabletrust-app"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            View all use cases
-          </a>
-        </div>
+        <h2 className="section-title">Built for Real Business</h2>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((step, index) => (
