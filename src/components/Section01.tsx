@@ -57,7 +57,7 @@ const Section01 = () => {
                 className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary-blue/20 blur-2xl transition-transform duration-500 group-hover:scale-125"
               />
               <div className="relative">
-                <p className="text-sm font-semibold tracking-[-0.01em]">
+                <p className="font-charter text-lg leading-tight tracking-[-0.025em] text-ink">
                   {title}
                 </p>
               </div>
