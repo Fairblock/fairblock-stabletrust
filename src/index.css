@@ -114,3 +114,37 @@
     outline-offset: 4px;
   }
 }
+
+@keyframes cipher-drift {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translate3d(-3px, 1px, 0);
+  }
+  50% {
+    opacity: 0.82;
+    transform: translate3d(3px, -1px, 0);
+  }
+}
+
+.cipher-fragment {
+  animation: cipher-drift 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: opacity, transform;
+}
+
+.cipher-fragment-reverse {
+  animation-direction: reverse;
+  animation-delay: -2.4s;
+}
+
+.cipher-fragment-slow {
+  animation-duration: 9.5s;
+  animation-delay: -4.1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cipher-fragment {
+    animation: none;
+    opacity: 0.42;
+  }
+}

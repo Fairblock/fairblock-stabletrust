@@ -42,13 +42,29 @@ const BrandCloud = ({ brands }: { brands: readonly BrandMark[] }) => (
 
 const ConfidentialVisual = () => (
   <div className="relative mt-2.5 flex h-[54px] w-full items-center justify-center">
+    <span aria-hidden="true" className="absolute h-12 w-12 rounded-full bg-primary-blue/10 blur-xl" />
+    <div aria-hidden="true" className="absolute inset-0 font-mono text-[6.5px] font-semibold uppercase tracking-[0.18em] text-ink/55">
+      <span className="absolute left-1/2 top-0 -translate-x-[94px]">
+        <span className="cipher-fragment block">7f3a·c91e</span>
+      </span>
+      <span className="absolute left-1/2 top-[7px] translate-x-[43px]">
+        <span className="cipher-fragment cipher-fragment-reverse block">0xa2d8f4</span>
+      </span>
+      <span className="absolute bottom-[4px] left-1/2 -translate-x-[102px]">
+        <span className="cipher-fragment cipher-fragment-slow block">9b4c·e702</span>
+      </span>
+      <span className="absolute bottom-[1px] left-1/2 translate-x-[38px]">
+        <span className="cipher-fragment cipher-fragment-reverse cipher-fragment-slow block">6d01·af83</span>
+      </span>
+    </div>
     <img
       alt="CUSD symbol"
-      className="h-[50px] w-auto object-contain"
+      className="relative z-10 h-[50px] w-auto object-contain"
       src="/cusd-symbol.svg"
     />
   </div>
 );
+
 const Section01 = () => {
   return (
     <section className="relative isolate min-h-[calc(100svh-52px)] overflow-hidden border-b border-line bg-white">
