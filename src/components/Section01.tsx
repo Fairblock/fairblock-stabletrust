@@ -3,7 +3,7 @@ import BackgroundVideo from "./custom/BackgroundVideo";
 
 const Section01 = () => {
   return (
-    <section className="relative isolate overflow-hidden border-b border-line bg-[#f8f5ee]">
+    <section className="relative isolate overflow-hidden border-b border-line bg-white">
       <BackgroundVideo />
       <div className="wrapper relative z-10 min-h-[640px] justify-center py-20 sm:min-h-[700px] sm:py-28">
         <div className="max-w-[980px]">
@@ -16,7 +16,7 @@ const Section01 = () => {
             <br />
             <span className="italic text-primary-blue">All Confidential.</span>
           </h1>
-          <p className="hero-copy mt-7">
+          <p className="section-copy mt-7 max-w-[660px]">
             Stabletrust Pay is Fairblock's flagship app for confidential
             stablecoin transfers across chains. Use one application for every
             stablecoin, on every chain, while keeping amounts, balances, and
@@ -42,7 +42,7 @@ const Section01 = () => {
           </div>
         </div>
 
-        <div className="mt-14 grid w-full max-w-[760px] grid-cols-1 border-y border-ink/25 bg-[#f8f5ee]/72 sm:grid-cols-3">
+        <div className="mt-14 grid w-full max-w-[760px] grid-cols-1 border-y border-line bg-white/72 sm:grid-cols-3">
           {[
             ["Every stablecoin", "One confidential interface across stablecoin ecosystems"],
             ["Every chain", "Built for multichain payment flows"],

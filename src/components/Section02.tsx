@@ -1,6 +1,6 @@
 const Section02 = () => {
   return (
-    <section className="border-b border-line bg-[#f1eee7]">
+    <section className="border-b border-line bg-white">
       <div className="wrapper py-20 md:py-28">
         <div className="max-w-4xl">
           <h2 className="section-title">Stop the Leak</h2>

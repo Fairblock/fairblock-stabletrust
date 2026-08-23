@@ -30,16 +30,16 @@ const STEPS = [
     image: "/s04-strategic-deals.svg",
   },
   {
-    title: "RWA",
+    title: "Tokenized Stocks",
     description:
-      "Trade tokenized securities confidentially while keeping portfolio composition private.",
+      "Trade tokenized stocks and funds onchain like real-world dark pools, without leaking the size or direction of trades.",
     image: "/s04-rwa.svg",
   },
 ];
 
 const Section04 = () => {
   return (
-    <section className="technical-field border-b border-line">
+    <section className="border-b border-line bg-white">
       <div className="wrapper py-20 sm:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -58,7 +58,7 @@ const Section04 = () => {
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((step, index) => (
             <article
-              className="editorial-card group overflow-hidden border border-line bg-white"
+              className="group overflow-hidden border border-line bg-white transition-transform duration-200 hover:-translate-y-1"
               key={step.title}
             >
               <div className="flex h-36 items-center justify-center overflow-hidden border-b border-line bg-white">
@@ -72,9 +72,7 @@ const Section04 = () => {
                 <span className="font-mono text-xs text-[#70808b]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-4 font-sf-pro-display text-2xl font-medium tracking-[-0.035em]">
-                  {step.title}
-                </h3>
+                <h3 className="mt-4 font-charter text-2xl">{step.title}</h3>
                 <p className="mt-3 leading-6 text-muted">{step.description}</p>
               </div>
             </article>

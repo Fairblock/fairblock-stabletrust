@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="relative overflow-hidden bg-[#f8f5ee] text-ink">
+    <div className="relative overflow-hidden bg-white text-ink">
       <Header />
       <main>
         <Section01 />
