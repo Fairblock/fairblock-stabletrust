@@ -64,7 +64,9 @@ const ConfidentialVisual = () => (
     </defs>
 
     <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" filter="url(#secure-glow)" r="25" />
-    <path d="M48 16c26 0 43 9 57 17M48 54c26 0 43-9 57-17M212 16c-26 0-43 9-57 17M212 54c-26 0-43-9-57-17" stroke="url(#secure-link)" strokeDasharray="2 4" strokeLinecap="round" strokeWidth="1.4" />
+    <path d="M48 16c26 0 43 9 57 17M48 54c26 0 43-9 57-17M212 16c-26 0-43 9-57 17M212 54c-26 0-43-9-57-17" stroke="url(#secure-link)" strokeDasharray="2 4" strokeLinecap="round" strokeWidth="1.4">
+      <animate attributeName="stroke-dashoffset" dur="8s" from="0" repeatCount="indefinite" to="-24" />
+    </path>
 
     <g fill="#fff" stroke="#0B0D10" strokeOpacity=".48" strokeWidth="1.5">
       <circle cx="39" cy="15" r="9" />
@@ -84,11 +86,15 @@ const ConfidentialVisual = () => (
     </g>
 
     <g opacity=".85">
-      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="2 3" />
-      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="1 5" transform="rotate(62 130 35)" />
+      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="2 3">
+        <animate attributeName="stroke-dashoffset" dur="10s" from="0" repeatCount="indefinite" to="-20" />
+      </ellipse>
+      <ellipse cx="130" cy="35" rx="38" ry="19" stroke="#58BDF6" strokeDasharray="1 5" transform="rotate(62 130 35)">
+        <animate attributeName="stroke-dashoffset" dur="12s" from="0" repeatCount="indefinite" to="24" />
+      </ellipse>
     </g>
 
-    <g>
+    <g opacity=".92">
       <g fill="#fff" stroke="#58BDF6" strokeOpacity=".65">
         <rect height="9" rx="4.5" width="25" x="92" y="21" />
         <rect height="9" rx="4.5" width="25" x="143" y="12" />
@@ -101,15 +107,36 @@ const ConfidentialVisual = () => (
         <text x="154" y="49.4">A2D8</text>
         <text x="105" y="57.4">9B4C</text>
       </g>
-      <animateTransform attributeName="transform" dur="16s" from="0 130 35" repeatCount="indefinite" to="360 130 35" type="rotate" />
+      <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values=".76;.96;.84;.92;.76" />
+    </g>
+
+    <g fill="#BCE9FF" filter="url(#secure-glow)">
+      <circle r="1.4">
+        <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+        <animateMotion dur="7s" path="M48 16c26 0 43 9 57 17" repeatCount="indefinite" />
+      </circle>
+      <circle r="1.4">
+        <animate attributeName="opacity" begin="1.8s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+        <animateMotion begin="1.8s" dur="7s" path="M212 54c-26 0-43-9-57-17" repeatCount="indefinite" />
+      </circle>
+      <circle r="1.4">
+        <animate attributeName="opacity" begin="3.6s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+        <animateMotion begin="3.6s" dur="7s" path="M48 54c26 0 43-9 57-17" repeatCount="indefinite" />
+      </circle>
+      <circle r="1.4">
+        <animate attributeName="opacity" begin="5.4s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+        <animateMotion begin="5.4s" dur="7s" path="M212 16c-26 0-43 9-57 17" repeatCount="indefinite" />
+      </circle>
     </g>
 
     <g>
       <circle cx="130" cy="35" fill="#58BDF6" fillOpacity=".2" r="19">
-        <animate attributeName="r" dur="3.6s" repeatCount="indefinite" values="18;22;18" />
-        <animate attributeName="fill-opacity" dur="3.6s" repeatCount="indefinite" values=".22;.04;.22" />
+        <animate attributeName="r" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values="18;21;18.6;20;18;18" />
+        <animate attributeName="fill-opacity" calcMode="spline" dur="4.8s" keySplines=".2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1;.2 0 .2 1" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values=".16;.3;.18;.26;.16;.16" />
       </circle>
-      <path d="m130 21 12 7v14l-12 7-12-7V28z" fill="url(#cipher-core)" stroke="#fff" strokeWidth="1.5" />
+      <path d="m130 21 12 7v14l-12 7-12-7V28z" fill="url(#cipher-core)" stroke="#fff" strokeWidth="1.5">
+        <animate attributeName="stroke-opacity" dur="4.8s" keyTimes="0;.09;.18;.28;.4;1" repeatCount="indefinite" values=".82;1;.86;1;.82;.82" />
+      </path>
       <g fill="#0B0D10">
         <circle cx="125" cy="31" r="1.2" />
         <circle cx="130" cy="31" r="1.2" />
