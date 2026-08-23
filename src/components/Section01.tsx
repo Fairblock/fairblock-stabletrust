@@ -45,6 +45,7 @@ const ConfidentialVisual = () => (
     aria-label="Encrypted network relationships and transfers"
     className="relative mt-2.5 h-[54px] w-full overflow-visible"
     fill="none"
+    shapeRendering="geometricPrecision"
     viewBox="0 0 260 70"
   >
     <defs>
@@ -70,11 +71,8 @@ const ConfidentialVisual = () => (
       <filter id="secure-glow" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur stdDeviation="4" />
       </filter>
-      <filter id="plasma-distort" x="-25%" y="-25%" width="150%" height="150%">
-        <feTurbulence baseFrequency=".04 .09" numOctaves="2" seed="7" type="fractalNoise" result="noise">
-          <animate attributeName="baseFrequency" dur="12s" repeatCount="indefinite" values=".04 .09;.055 .075;.04 .09" />
-        </feTurbulence>
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="B" />
+      <filter id="plasma-soft" x="-15%" y="-15%" width="130%" height="130%">
+        <feGaussianBlur stdDeviation=".65" />
       </filter>
     </defs>
 
@@ -94,21 +92,21 @@ const ConfidentialVisual = () => (
       <circle cx="221" cy="55" r=".9" />
     </g>
 
-    <g fill="#BCE9FF" filter="url(#secure-glow)">
-      <circle r="1.4">
-        <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+    <g fill="#7AD5FF">
+      <circle r="1">
+        <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;.7;.7;0;0" />
         <animateMotion dur="7s" path="M48 16c26 0 43 9 57 17" repeatCount="indefinite" />
       </circle>
-      <circle r="1.4">
-        <animate attributeName="opacity" begin="1.8s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+      <circle r="1">
+        <animate attributeName="opacity" begin="1.8s" dur="7s" repeatCount="indefinite" values="0;0;.7;.7;0;0" />
         <animateMotion begin="1.8s" dur="7s" path="M212 54c-26 0-43-9-57-17" repeatCount="indefinite" />
       </circle>
-      <circle r="1.4">
-        <animate attributeName="opacity" begin="3.6s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+      <circle r="1">
+        <animate attributeName="opacity" begin="3.6s" dur="7s" repeatCount="indefinite" values="0;0;.7;.7;0;0" />
         <animateMotion begin="3.6s" dur="7s" path="M48 54c26 0 43-9 57-17" repeatCount="indefinite" />
       </circle>
-      <circle r="1.4">
-        <animate attributeName="opacity" begin="5.4s" dur="7s" repeatCount="indefinite" values="0;0;.85;.85;0;0" />
+      <circle r="1">
+        <animate attributeName="opacity" begin="5.4s" dur="7s" repeatCount="indefinite" values="0;0;.7;.7;0;0" />
         <animateMotion begin="5.4s" dur="7s" path="M212 16c-26 0-43 9-57 17" repeatCount="indefinite" />
       </circle>
     </g>
@@ -119,26 +117,25 @@ const ConfidentialVisual = () => (
         <animate attributeName="fill-opacity" dur="5.2s" keyTimes="0;.08;.17;.27;.38;1" repeatCount="indefinite" values=".08;.18;.1;.15;.08;.08" />
       </circle>
 
-      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="#168BCF" fillOpacity=".2" filter="url(#secure-glow)">
-        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z;M129 19C138.8 17.9 146.4 25.1 146.8 34.8C147.1 44.9 139.6 51.9 130.1 51.6C120 51.4 113 45 113.5 35.4C114 25.5 119.5 20.1 129 19Z;M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" />
-      </path>
-      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="url(#liquid-core)">
-        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z;M129 19C138.8 17.9 146.4 25.1 146.8 34.8C147.1 44.9 139.6 51.9 130.1 51.6C120 51.4 113 45 113.5 35.4C114 25.5 119.5 20.1 129 19Z;M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" />
-      </path>
-      <g clipPath="url(#liquid-clip)" filter="url(#plasma-distort)">
-        <path d="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" fill="url(#liquid-ribbon)" fillOpacity=".58">
-          <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z;M113 31C121 19 135 20 145 29C151 35 145 46 133 50C121 52 109 43 113 31Z;M111 38C116 24 128 19 143 25C151 29 149 40 139 47C128 54 114 49 111 38Z" />
-        </path>
-        <path d="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" fill="#168BCF" fillOpacity=".28">
-          <animate attributeName="d" dur="8.5s" repeatCount="indefinite" values="M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z;M112 39C123 31 137 30 148 36C141 47 127 51 115 47C112 45 111 42 112 39Z;M113 45C120 34 132 29 148 31C143 43 132 49 118 50C115 49 113 47 113 45Z" />
-        </path>
-        <ellipse cx="124" cy="29" fill="#AEEAFF" fillOpacity=".22" rx="4.5" ry="1.5">
-          <animate attributeName="cx" dur="6.5s" repeatCount="indefinite" values="122;128;122" />
-          <animate attributeName="fill-opacity" dur="6.5s" repeatCount="indefinite" values=".12;.3;.12" />
-        </ellipse>
-        <path d="M116 39C123 34 136 33 144 28" stroke="#7AD5FF" strokeOpacity=".45" strokeWidth=".7">
-          <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M116 39C123 34 136 33 144 28;M116 34C125 29 138 34 144 41;M116 39C123 34 136 33 144 28" />
-          <animate attributeName="stroke-opacity" dur="8s" repeatCount="indefinite" values=".2;.62;.2" />
+      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="#168BCF" fillOpacity=".18" filter="url(#secure-glow)" />
+      <path d="M130 18.8C140 18.5 147.2 25.9 146.2 36.2C145.4 46.1 138.4 52.1 128.4 51.4C118.7 50.9 112.9 44.2 113.7 34.5C114.5 24.8 120.5 19.2 130 18.8Z" fill="url(#liquid-core)" />
+      <g clipPath="url(#liquid-clip)">
+        <g filter="url(#plasma-soft)">
+          <path d="M109 39C116 23 128 18 144 24C152 28 150 39 140 47C129 55 114 50 109 39Z" fill="url(#liquid-ribbon)" fillOpacity=".54" />
+          <animateTransform attributeName="transform" dur="8s" repeatCount="indefinite" type="translate" values="-1 1;2 -1;-1 1" />
+        </g>
+        <g filter="url(#plasma-soft)">
+          <path d="M111 46C120 34 133 29 150 32C144 45 132 51 117 50C113 49 111 47 111 46Z" fill="#168BCF" fillOpacity=".24" />
+          <animateTransform attributeName="transform" dur="10s" repeatCount="indefinite" type="translate" values="2 -1;-2 1;2 -1" />
+        </g>
+        <g>
+          <ellipse cx="124" cy="29" fill="#AEEAFF" fillOpacity=".2" rx="4.5" ry="1.4" />
+          <animateTransform attributeName="transform" dur="7s" repeatCount="indefinite" type="translate" values="-1 0;3 1;-1 0" />
+          <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values=".55;1;.55" />
+        </g>
+        <path d="M116 39C123 34 136 33 144 28" stroke="#7AD5FF" strokeDasharray="2 3" strokeOpacity=".4" strokeWidth=".65">
+          <animate attributeName="stroke-dashoffset" dur="9s" from="0" repeatCount="indefinite" to="-20" />
+          <animate attributeName="stroke-opacity" dur="9s" repeatCount="indefinite" values=".18;.52;.18" />
         </path>
       </g>
     </g>
