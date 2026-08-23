@@ -42,18 +42,32 @@ const Section01 = () => {
           </div>
         </div>
 
-        <div className="mt-14 grid w-full max-w-[760px] grid-cols-1 border-y border-line bg-white/72 sm:grid-cols-3">
+        <div className="mt-14 grid w-full max-w-[860px] grid-cols-1 gap-3 sm:grid-cols-3">
           {[
             ["Every stablecoin", "One confidential interface across stablecoin ecosystems"],
             ["Every chain", "Built for multichain payment flows"],
             ["Confidential by default", "Amounts and balances stay private"],
           ].map(([title, description]) => (
             <div
-              className="border-b border-line px-0 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0"
+              className="group relative overflow-hidden rounded-[18px] border border-white/90 bg-white/60 px-5 py-5 shadow-[0_16px_44px_rgba(30,55,68,0.10)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary-blue/70 hover:bg-white/75 hover:shadow-[0_20px_54px_rgba(40,117,158,0.16)]"
               key={title}
             >
-              <p className="text-sm font-semibold">{title}</p>
-              <p className="mt-1 text-sm leading-5 text-muted">{description}</p>
+              <span
+                aria-hidden="true"
+                className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-primary-blue/20 blur-2xl transition-transform duration-500 group-hover:scale-125"
+              />
+              <div className="relative flex items-center gap-2.5">
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-primary-blue shadow-[0_0_0_4px_rgba(88,189,246,0.14)]"
+                />
+                <p className="text-sm font-semibold tracking-[-0.01em]">
+                  {title}
+                </p>
+              </div>
+              <p className="relative mt-2.5 text-sm leading-5 text-muted">
+                {description}
+              </p>
             </div>
           ))}
         </div>
