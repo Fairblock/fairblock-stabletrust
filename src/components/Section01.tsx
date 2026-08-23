@@ -91,7 +91,7 @@ const ConfidentialVisual = () => (
 
 const Section01 = () => {
   return (
-    <section className="relative isolate overflow-hidden border-b border-line bg-white">
+    <section className="relative isolate min-h-[calc(100svh-52px)] overflow-hidden border-b border-line bg-white">
       <BackgroundVideo />
       <div className="wrapper relative z-10 min-h-[600px] justify-center py-14 sm:min-h-[650px] sm:py-16">
         <div className="max-w-[980px]">
